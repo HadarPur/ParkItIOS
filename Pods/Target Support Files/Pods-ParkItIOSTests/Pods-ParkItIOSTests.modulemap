@@ -1,0 +1,6 @@
+framework module Pods_ParkItIOSTests {
+  umbrella header "Pods-ParkItIOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
