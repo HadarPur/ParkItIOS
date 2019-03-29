@@ -84,15 +84,20 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     
     
     @IBAction func navigateViaGoogleMapsButtonClicked(_ sender: Any) {
-        if (UIApplication.shared.canOpenURL(NSURL(string:"comgooglemaps://")! as URL)) {
-            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=\(String(describing: mCurrentLat)),\(mCurrentLong)&daddr=\(parkingLat),\(parkingLong)&directionsmode=walking")!, options: [:], completionHandler: nil)
+        if UIApplication.shared.canOpenURL(URL(string: "comgooglemaps:")!) {
+            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=\(parkingLat),\(parkingLong)&daddr=\(mCurrentLat),\(mCurrentLong)&directionsmode=walking")!, options: [:], completionHandler: nil)
         } else {
-            mFunctions.showToast(msg: "Can't open google maps app")
-            NSLog("Can't use comgooglemaps://");
+            mFunctions.showToast(msg: "Can't open GoogleMaps App")
         }
     }
     
     @IBAction func seeLocationViaGoogleMapsButtonClicked(_ sender: Any) {
+        if UIApplication.shared.canOpenURL(URL(string: "comgooglemaps:")!) {
+            UIApplication.shared.open(URL(string:
+                "comgooglemaps://?center=\(mCurrentLat),\(mCurrentLong).975866&zoom=14")!, options: [:], completionHandler: nil)
+        } else {
+            mFunctions.showToast(msg: "Can't open GoogleMaps App")
+        }
     }
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.right {
