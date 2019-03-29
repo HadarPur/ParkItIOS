@@ -8,8 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		08997593DB22742794DAD0C1 /* Pods_ParkItIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46628208C3F858020ED617D6 /* Pods_ParkItIOSUITests.framework */; };
+		3E413E502248C6B4002BAA5D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E4F2248C6B4002BAA5D /* SplashViewController.swift */; };
+		3E413E522248C760002BAA5D /* ParkingSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E512248C760002BAA5D /* ParkingSearchViewController.swift */; };
+		3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E532248C7B2002BAA5D /* ParkingResultsViewController.swift */; };
+		3E413E562248C7F6002BAA5D /* ParkingStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E552248C7F6002BAA5D /* ParkingStatisticsViewController.swift */; };
+		3E413E592248C86F002BAA5D /* FindMyCarViewConfroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E582248C86F002BAA5D /* FindMyCarViewConfroller.swift */; };
+		3E5DCFDD224B7C5F005E05DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E5DCFDC224B7C5F005E05DB /* GoogleService-Info.plist */; };
+		3E5DCFE0224B7EA9005E05DB /* FuncUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */; };
+		3E5DCFE2224B7ED0005E05DB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */; };
+		3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */; };
+		3E5DCFE6224BB512005E05DB /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */; };
+		3E5DCFEC224BBAEE005E05DB /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFEB224BBAEE005E05DB /* Street.swift */; };
+		3E5DCFEF224BC5A1005E05DB /* CalaDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */; };
+		3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */; };
+		3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C1224CDAD90058D419 /* Reachability.swift */; };
+		3EB3B4C4224CDC0A0058D419 /* ButtonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */; };
+		3EF5BF8A2248F368001E8264 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5BF892248F368001E8264 /* AboutUsViewController.swift */; };
 		3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF855C22079C720020E0BC /* AppDelegate.swift */; };
-		3EFF855F22079C720020E0BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF855E22079C720020E0BC /* ViewController.swift */; };
+		3EFF855F22079C720020E0BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF855E22079C720020E0BC /* MainViewController.swift */; };
 		3EFF856222079C720020E0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF856022079C720020E0BC /* Main.storyboard */; };
 		3EFF856522079C720020E0BC /* ParkItIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF856322079C720020E0BC /* ParkItIOS.xcdatamodeld */; };
 		3EFF856722079C730020E0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF856622079C730020E0BC /* Assets.xcassets */; };
@@ -40,9 +56,25 @@
 /* Begin PBXFileReference section */
 		254CF451E0D731CB97519392 /* Pods-ParkItIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkItIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkItIOSTests/Pods-ParkItIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C4B2F57B2A1DE7885704967 /* Pods-ParkItIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkItIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkItIOS/Pods-ParkItIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3E413E4F2248C6B4002BAA5D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3E413E512248C760002BAA5D /* ParkingSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSearchViewController.swift; sourceTree = "<group>"; };
+		3E413E532248C7B2002BAA5D /* ParkingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingResultsViewController.swift; sourceTree = "<group>"; };
+		3E413E552248C7F6002BAA5D /* ParkingStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingStatisticsViewController.swift; sourceTree = "<group>"; };
+		3E413E582248C86F002BAA5D /* FindMyCarViewConfroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCarViewConfroller.swift; sourceTree = "<group>"; };
+		3E5DCFDC224B7C5F005E05DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncUtils.swift; sourceTree = "<group>"; };
+		3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsHandler.swift; sourceTree = "<group>"; };
+		3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
+		3E5DCFEB224BBAEE005E05DB /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalaDistance.swift; sourceTree = "<group>"; };
+		3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		3EB3B4C1224CDAD90058D419 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtentions.swift; sourceTree = "<group>"; };
+		3EF5BF892248F368001E8264 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		3EFF855922079C720020E0BC /* ParkItIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkItIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFF855C22079C720020E0BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EFF855E22079C720020E0BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EFF855E22079C720020E0BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3EFF856122079C720020E0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EFF856422079C720020E0BC /* ParkItIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParkItIOS.xcdatamodel; sourceTree = "<group>"; };
 		3EFF856622079C730020E0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +123,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E413E572248C818002BAA5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E413E4F2248C6B4002BAA5D /* SplashViewController.swift */,
+				3E413E512248C760002BAA5D /* ParkingSearchViewController.swift */,
+				3E413E532248C7B2002BAA5D /* ParkingResultsViewController.swift */,
+				3E413E552248C7F6002BAA5D /* ParkingStatisticsViewController.swift */,
+				3EFF855E22079C720020E0BC /* MainViewController.swift */,
+				3E413E582248C86F002BAA5D /* FindMyCarViewConfroller.swift */,
+				3EF5BF892248F368001E8264 /* AboutUsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3E5DCFDE224B7E93005E05DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */,
+				3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */,
+				3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */,
+				3EB3B4C1224CDAD90058D419 /* Reachability.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E5DCFE7224BB516005E05DB /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				3EFF855C22079C720020E0BC /* AppDelegate.swift */,
+				3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */,
+			);
+			name = Singletons;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3E5DCFEA224BBAD6005E05DB /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3E5DCFEB224BBAEE005E05DB /* Street.swift */,
+				3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3E5DCFED224BC238005E05DB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3EFF856022079C720020E0BC /* Main.storyboard */,
+				3EFF856622079C730020E0BC /* Assets.xcassets */,
+				3EFF856822079C730020E0BC /* LaunchScreen.storyboard */,
+				3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */,
+				3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		3EFF855022079C720020E0BC = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +204,13 @@
 		3EFF855B22079C720020E0BC /* ParkItIOS */ = {
 			isa = PBXGroup;
 			children = (
-				3EFF855C22079C720020E0BC /* AppDelegate.swift */,
-				3EFF855E22079C720020E0BC /* ViewController.swift */,
-				3EFF856022079C720020E0BC /* Main.storyboard */,
-				3EFF856622079C730020E0BC /* Assets.xcassets */,
-				3EFF856822079C730020E0BC /* LaunchScreen.storyboard */,
+				3E5DCFED224BC238005E05DB /* UI */,
+				3E5DCFEA224BBAD6005E05DB /* Logic */,
+				3E5DCFE7224BB516005E05DB /* Singletons */,
+				3E5DCFDE224B7E93005E05DB /* Utils */,
+				3E413E572248C818002BAA5D /* ViewControllers */,
 				3EFF856B22079C730020E0BC /* Info.plist */,
+				3E5DCFDC224B7C5F005E05DB /* GoogleService-Info.plist */,
 				3EFF856322079C720020E0BC /* ParkItIOS.xcdatamodeld */,
 			);
 			path = ParkItIOS;
@@ -278,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EFF856A22079C730020E0BC /* LaunchScreen.storyboard in Resources */,
+				3E5DCFDD224B7C5F005E05DB /* GoogleService-Info.plist in Resources */,
 				3EFF856722079C730020E0BC /* Assets.xcassets in Resources */,
 				3EFF856222079C720020E0BC /* Main.storyboard in Resources */,
 			);
@@ -405,9 +495,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */,
+				3E413E522248C760002BAA5D /* ParkingSearchViewController.swift in Sources */,
+				3EB3B4C4224CDC0A0058D419 /* ButtonExtentions.swift in Sources */,
+				3E5DCFE0224B7EA9005E05DB /* FuncUtils.swift in Sources */,
+				3EF5BF8A2248F368001E8264 /* AboutUsViewController.swift in Sources */,
 				3EFF856522079C720020E0BC /* ParkItIOS.xcdatamodeld in Sources */,
-				3EFF855F22079C720020E0BC /* ViewController.swift in Sources */,
+				3EFF855F22079C720020E0BC /* MainViewController.swift in Sources */,
+				3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */,
 				3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */,
+				3E5DCFEC224BBAEE005E05DB /* Street.swift in Sources */,
+				3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */,
+				3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */,
+				3E413E562248C7F6002BAA5D /* ParkingStatisticsViewController.swift in Sources */,
+				3E413E592248C86F002BAA5D /* FindMyCarViewConfroller.swift in Sources */,
+				3E413E502248C6B4002BAA5D /* SplashViewController.swift in Sources */,
+				3E5DCFE2224B7ED0005E05DB /* PaddingLabel.swift in Sources */,
+				3E5DCFEF224BC5A1005E05DB /* CalaDistance.swift in Sources */,
+				3E5DCFE6224BB512005E05DB /* FirebaseStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -568,9 +673,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -584,8 +690,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FM8FM6T9QK;
 				INFOPLIST_FILE = ParkItIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -599,8 +709,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FM8FM6T9QK;
 				INFOPLIST_FILE = ParkItIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -616,7 +730,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParkItIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -633,7 +751,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParkItIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -649,7 +771,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParkItIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -665,7 +791,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParkItIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

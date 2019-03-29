@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ezi-DM-lgV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="VTy-Ua-HKP">
+            <objects>
+                <viewController id="Ezi-DM-lgV" customClass="SplashViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rUJ-WB-tYH"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCi-OH-sjF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhI-2n-8F7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-Hn-19r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fCd-iN-BBY">
+                                <rect key="frame" x="112" y="258" width="145" height="145"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fCd-iN-BBY" firstAttribute="centerX" secondItem="hhI-2n-8F7" secondAttribute="centerX" constant="-3" id="1il-SH-TM4"/>
+                            <constraint firstItem="fCd-iN-BBY" firstAttribute="top" secondItem="rUJ-WB-tYH" secondAttribute="bottom" constant="238" id="3U8-dV-sgg"/>
+                            <constraint firstItem="fCd-iN-BBY" firstAttribute="centerY" secondItem="hhI-2n-8F7" secondAttribute="centerY" constant="-3" id="8Ea-9D-ou5"/>
+                            <constraint firstItem="2Iv-Hn-19r" firstAttribute="height" secondItem="hhI-2n-8F7" secondAttribute="height" id="GO1-YR-AH2"/>
+                            <constraint firstItem="2Iv-Hn-19r" firstAttribute="bottom" secondItem="hhI-2n-8F7" secondAttribute="bottom" id="IlB-Bp-1fZ"/>
+                            <constraint firstItem="2Iv-Hn-19r" firstAttribute="width" secondItem="hhI-2n-8F7" secondAttribute="width" id="TCh-Pp-5sp"/>
+                            <constraint firstItem="fCd-iN-BBY" firstAttribute="leading" secondItem="hhI-2n-8F7" secondAttribute="leading" constant="112" id="aoG-mG-pJe"/>
+                            <constraint firstItem="2Iv-Hn-19r" firstAttribute="leading" secondItem="hhI-2n-8F7" secondAttribute="leading" id="se5-Jg-ixV"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="mImageView" destination="fCd-iN-BBY" id="s1y-hp-3fC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlE-Qi-5cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-900" y="26.53673163418291"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gd7-RW-3KQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bgH-Ay-8Ja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="appback" translatesAutoresizingMaskIntoConstraints="NO" id="dqE-Rm-JHe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-IR-lQB" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="67" y="370" width="240" height="36"/>
+                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <state key="normal" title="Statistics">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3U8-PP-uQu" kind="show" id="cv9-ma-zaY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-kF-Smq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="67" y="430" width="240" height="36"/>
+                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <state key="normal" title="About Us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EY4-mr-NXd" kind="show" id="s6g-jC-R9i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMR-cE-kXj" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="67" y="310" width="240" height="36"/>
+                                <color key="backgroundColor" red="0.099873416125774384" green="0.13735309243202209" blue="0.80582815408706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <state key="normal" title="Find My Car">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f2Q-K2-pil" kind="show" id="Leh-Az-zCR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-ka-XWq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="67" y="250" width="240" height="38"/>
+                                <color key="backgroundColor" red="0.099873416125774384" green="0.13735309243202209" blue="0.80582815408706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <state key="normal" title="Find Parking Space">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3vn-h3-6cS" kind="show" id="9tM-0I-Pu2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="width" secondItem="UoZ-ka-XWq" secondAttribute="width" id="1q5-8Z-SFN"/>
+                            <constraint firstItem="dqE-Rm-JHe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="2iY-oR-grY"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8VA-up-oNP"/>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Apd-mA-5yq"/>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="height" secondItem="UoZ-ka-XWq" secondAttribute="height" constant="-2" id="BOr-5j-7OF"/>
+                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="top" secondItem="gd7-RW-3KQ" secondAttribute="bottom" constant="230" id="HPw-Yb-huo"/>
+                            <constraint firstItem="dqE-Rm-JHe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NeO-A2-6Xs"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="top" secondItem="UoZ-ka-XWq" secondAttribute="bottom" constant="22" id="OiP-hf-eUO"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="height" secondItem="UoZ-ka-XWq" secondAttribute="height" constant="-2" id="PQ1-Kr-NGd"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="top" secondItem="XMR-cE-kXj" secondAttribute="bottom" constant="24" id="RjW-nq-KfV"/>
+                            <constraint firstItem="dqE-Rm-JHe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Uoz-qK-aG1"/>
+                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZZb-Zx-Z8R"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iYW-qg-LPO"/>
+                            <constraint firstItem="dqE-Rm-JHe" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="kdd-go-DbI"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="width" secondItem="UoZ-ka-XWq" secondAttribute="width" id="ktJ-Nv-Jhm"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="width" secondItem="UoZ-ka-XWq" secondAttribute="width" id="p5M-HJ-Q0M"/>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="top" secondItem="IjI-IR-lQB" secondAttribute="bottom" constant="24" id="xBp-lj-N3r"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="height" secondItem="UoZ-ka-XWq" secondAttribute="height" constant="-2" id="yZ7-mU-D5M"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="mAboutUsButton" destination="Bdv-kF-Smq" id="FhF-xH-ppD"/>
+                        <outlet property="mFindMyCarButton" destination="XMR-cE-kXj" id="0nP-iC-TDF"/>
+                        <outlet property="mFindParkingSpaceButton" destination="UoZ-ka-XWq" id="xq7-Bm-Kcy"/>
+                        <outlet property="mStatisticsButton" destination="IjI-IR-lQB" id="a4b-YN-dhk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="26.53673163418291"/>
+        </scene>
+        <!--Parking Search View Controller-->
+        <scene sceneID="kfZ-7w-D4Q">
+            <objects>
+                <viewController id="3vn-h3-6cS" customClass="ParkingSearchViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pbi-3A-en5"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Yi-2o-crH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8lV-fH-M47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-oN-kLF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NLM-oN-kLF" firstAttribute="height" secondItem="8lV-fH-M47" secondAttribute="height" id="nBH-6b-4K8"/>
+                            <constraint firstItem="NLM-oN-kLF" firstAttribute="bottom" secondItem="8lV-fH-M47" secondAttribute="bottom" id="oiF-Rj-coO"/>
+                            <constraint firstItem="NLM-oN-kLF" firstAttribute="width" secondItem="8lV-fH-M47" secondAttribute="width" id="p9e-7A-dni"/>
+                            <constraint firstItem="NLM-oN-kLF" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" id="zEm-MH-Tpg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xn-SN-eUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-676"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="MqA-BD-tgU">
+            <objects>
+                <viewController id="EY4-mr-NXd" customClass="AboutUsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L6C-dp-Prk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ThC-Oj-APE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9MP-l5-gWm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-BD-opf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-yh-tsV">
+                                <rect key="frame" x="0.0" y="110" width="375" height="537"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Park it: parking light
+Our application will help you to find a parking lot very quickly by the following features: 
+
+Find parking space: no more spending time on finding parking space! 
+While pressing the button "find parking space" in the main page you can enter limited distance of walking, and the street name of your destination. Click the button "search" and the app will show you a table of 5 most recommended streets which are available for parking and nearby parking stations. Clicking on a table row which contains a street information will show you the street location on the map. 
+           
+You can also view daily on streets parking statistics: 
+On the main page click on the button "statistics" it will leads you to statistics screen. You can enter your destination street and arrival time hour, the map will show you the occupancy parking rate of the streets near your destination and their location. The streets will be shown on the map by markers with different colors. 
+                
+Blue marker: empty, streets with occupancy rate between 0%-25% 
+Green marker: available, streets with occupancy rate between 25% to 50% 
+Orange marker : occupied, occupancy rate between 50%-75%
+Purple marker: full, occupancy rate between 75%-100%
+                
+Forgot when you parked your car?
+With "find my car screen" you can save your last parking location with the button "save" and search for your last parking location with the button "search" .
+The button reset will show you your current location.
+                
+Park it, parking fast and parking light.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-El-0pA">
+                                <rect key="frame" x="102.5" y="42" width="170" height="44"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ThC-Oj-APE" firstAttribute="top" secondItem="7e9-yh-tsV" secondAttribute="bottom" constant="20" id="1fp-TU-gGw"/>
+                            <constraint firstItem="Pxo-BD-opf" firstAttribute="width" secondItem="9MP-l5-gWm" secondAttribute="width" id="A3M-Y2-Okv"/>
+                            <constraint firstItem="Pxo-BD-opf" firstAttribute="bottom" secondItem="9MP-l5-gWm" secondAttribute="bottom" id="Fxi-mm-JVB"/>
+                            <constraint firstItem="YuM-El-0pA" firstAttribute="top" secondItem="L6C-dp-Prk" secondAttribute="bottom" constant="22" id="REJ-p2-HS9"/>
+                            <constraint firstItem="7e9-yh-tsV" firstAttribute="top" secondItem="L6C-dp-Prk" secondAttribute="bottom" constant="90" id="aB7-kE-zgY"/>
+                            <constraint firstItem="7e9-yh-tsV" firstAttribute="leading" secondItem="9MP-l5-gWm" secondAttribute="leading" id="bUI-Hz-JKC"/>
+                            <constraint firstItem="Pxo-BD-opf" firstAttribute="leading" secondItem="9MP-l5-gWm" secondAttribute="leading" id="p2P-BE-Dsx"/>
+                            <constraint firstItem="Pxo-BD-opf" firstAttribute="height" secondItem="9MP-l5-gWm" secondAttribute="height" id="qSw-b7-UZJ"/>
+                            <constraint firstItem="7e9-yh-tsV" firstAttribute="centerX" secondItem="9MP-l5-gWm" secondAttribute="centerX" id="qym-fk-rah"/>
+                            <constraint firstItem="YuM-El-0pA" firstAttribute="centerX" secondItem="9MP-l5-gWm" secondAttribute="centerX" id="tdo-LE-IhN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mTextView" destination="7e9-yh-tsV" id="Msm-8D-XLY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8C-YO-bnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="795.6521739130435"/>
+        </scene>
+        <!--Find My Car View Confroller-->
+        <scene sceneID="o33-MH-KTo">
+            <objects>
+                <viewController id="f2Q-K2-pil" customClass="FindMyCarViewConfroller" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uwz-0v-R5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="clF-p1-Ur7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iWk-Bd-qSW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="Yor-ST-veM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find My Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iP-du-0RH">
+                                <rect key="frame" x="78" y="42" width="219" height="44"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-k7-rBH">
+                                <rect key="frame" x="16" y="107" width="207" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="G18-Qe-Dts"/>
+                                    <constraint firstAttribute="width" secondItem="xiZ-k7-rBH" secondAttribute="height" multiplier="207:73" constant="-116.2602739726027" id="H64-ob-Ozm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hs-XB-f0H" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="245" y="107" width="108" height="31"/>
+                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="4hO-WI-YfG"/>
+                                    <constraint firstAttribute="width" secondItem="0hs-XB-f0H" secondAttribute="height" multiplier="108:31" id="Eue-jQ-84V"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="nZS-w1-Yoe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="bsX-9q-ADo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78L-Lu-wnV" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="245" y="144" width="108" height="36"/>
+                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Bho-9G-hBc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="UHp-ct-yMM"/>
+                                    <constraint firstAttribute="width" secondItem="78L-Lu-wnV" secondAttribute="height" multiplier="3:1" id="pnz-Zm-zZs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="lMX-aN-0jH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-Wc-ytX" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="245" y="185" width="108" height="36"/>
+                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nks-Wc-ytX" secondAttribute="height" multiplier="3:1" id="80j-Co-M5U"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="Op2-VF-guw"/>
+                                    <constraint firstAttribute="height" constant="36" id="Y66-gV-cxK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="x7s-bc-goI"/>
+                                    <action selector="resetButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="g9m-A2-O5Z"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2q-Va-dt8" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="229" width="375" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG2-tV-JnW" userLabel="dir2">
+                                <rect key="frame" x="327" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kp2-se-8wV"/>
+                                    <constraint firstAttribute="width" constant="40" id="t4C-Hr-N8M"/>
+                                </constraints>
+                                <state key="normal" image="dir2">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeLocationViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="sly-EN-fkI"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-71-z0X" userLabel="dir1">
+                                <rect key="frame" x="279" y="607" width="40" height="40"/>
+                                <state key="normal" image="dir1"/>
+                                <connections>
+                                    <action selector="navigateViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="75S-jl-047"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nks-Wc-ytX" firstAttribute="width" secondItem="Nks-Wc-ytX" secondAttribute="height" multiplier="3:1" id="0zn-nB-FNM"/>
+                            <constraint firstItem="Nks-Wc-ytX" firstAttribute="width" secondItem="78L-Lu-wnV" secondAttribute="width" id="6aG-Go-B56"/>
+                            <constraint firstAttribute="trailing" secondItem="0hs-XB-f0H" secondAttribute="trailing" constant="22" id="A1d-nP-hFu"/>
+                            <constraint firstItem="Nks-Wc-ytX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiZ-k7-rBH" secondAttribute="trailing" constant="8" symbolic="YES" id="B1p-nq-UnA"/>
+                            <constraint firstItem="Yor-ST-veM" firstAttribute="leading" secondItem="iWk-Bd-qSW" secondAttribute="leading" id="C0q-eg-tNs"/>
+                            <constraint firstAttribute="trailing" secondItem="cG2-tV-JnW" secondAttribute="trailing" constant="8" id="HMB-Cq-4ht"/>
+                            <constraint firstItem="9iP-du-0RH" firstAttribute="top" secondItem="uwz-0v-R5C" secondAttribute="bottom" constant="22" id="HiK-bo-kRR"/>
+                            <constraint firstItem="UdN-71-z0X" firstAttribute="height" secondItem="cG2-tV-JnW" secondAttribute="height" id="QPp-Pu-Xin"/>
+                            <constraint firstItem="Nks-Wc-ytX" firstAttribute="height" secondItem="78L-Lu-wnV" secondAttribute="height" id="QRv-SY-wsm"/>
+                            <constraint firstItem="78L-Lu-wnV" firstAttribute="width" secondItem="0hs-XB-f0H" secondAttribute="width" id="UGD-ns-aFf"/>
+                            <constraint firstItem="Nks-Wc-ytX" firstAttribute="top" secondItem="9iP-du-0RH" secondAttribute="bottom" constant="99" id="WdI-Kn-dMM"/>
+                            <constraint firstItem="0hs-XB-f0H" firstAttribute="top" secondItem="uwz-0v-R5C" secondAttribute="bottom" constant="87" id="Zns-Ke-QZv"/>
+                            <constraint firstItem="0hs-XB-f0H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiZ-k7-rBH" secondAttribute="trailing" constant="8" symbolic="YES" id="ahQ-v0-Jef"/>
+                            <constraint firstItem="UdN-71-z0X" firstAttribute="width" secondItem="cG2-tV-JnW" secondAttribute="width" id="awE-j9-8wd"/>
+                            <constraint firstItem="9iP-du-0RH" firstAttribute="centerX" secondItem="iWk-Bd-qSW" secondAttribute="centerX" id="b05-LU-6Vj"/>
+                            <constraint firstItem="Yor-ST-veM" firstAttribute="height" secondItem="iWk-Bd-qSW" secondAttribute="height" id="b7H-3l-UHa"/>
+                            <constraint firstItem="cG2-tV-JnW" firstAttribute="leading" secondItem="UdN-71-z0X" secondAttribute="trailing" constant="8" id="bZf-5p-M89"/>
+                            <constraint firstItem="78L-Lu-wnV" firstAttribute="height" secondItem="0hs-XB-f0H" secondAttribute="height" constant="5" id="g81-eI-fTT"/>
+                            <constraint firstItem="Yor-ST-veM" firstAttribute="bottom" secondItem="iWk-Bd-qSW" secondAttribute="bottom" id="gM2-Pt-N7g"/>
+                            <constraint firstItem="0hs-XB-f0H" firstAttribute="top" secondItem="9iP-du-0RH" secondAttribute="bottom" constant="21" id="gMf-gh-HiA"/>
+                            <constraint firstItem="78L-Lu-wnV" firstAttribute="top" secondItem="uwz-0v-R5C" secondAttribute="bottom" constant="124" id="iWW-my-FRA"/>
+                            <constraint firstItem="clF-p1-Ur7" firstAttribute="top" secondItem="cG2-tV-JnW" secondAttribute="bottom" constant="20" id="k5m-LN-NNo"/>
+                            <constraint firstItem="xiZ-k7-rBH" firstAttribute="leading" secondItem="iWk-Bd-qSW" secondAttribute="leading" constant="16" id="kkL-eV-qsS"/>
+                            <constraint firstItem="78L-Lu-wnV" firstAttribute="top" secondItem="9iP-du-0RH" secondAttribute="bottom" constant="58" id="n9P-K9-lCB"/>
+                            <constraint firstItem="Q2q-Va-dt8" firstAttribute="width" secondItem="iWk-Bd-qSW" secondAttribute="width" id="nPI-eC-7KT"/>
+                            <constraint firstItem="Q2q-Va-dt8" firstAttribute="top" secondItem="xiZ-k7-rBH" secondAttribute="bottom" constant="8" id="nfc-9h-jQh"/>
+                            <constraint firstItem="xiZ-k7-rBH" firstAttribute="top" secondItem="9iP-du-0RH" secondAttribute="bottom" constant="21" id="oni-0C-ezI"/>
+                            <constraint firstAttribute="trailing" secondItem="Nks-Wc-ytX" secondAttribute="trailing" constant="22" id="p5t-CE-Xf1"/>
+                            <constraint firstItem="78L-Lu-wnV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiZ-k7-rBH" secondAttribute="trailing" constant="8" symbolic="YES" id="r8r-sy-7R8"/>
+                            <constraint firstItem="Q2q-Va-dt8" firstAttribute="centerX" secondItem="iWk-Bd-qSW" secondAttribute="centerX" id="uM4-SA-ku9"/>
+                            <constraint firstItem="Yor-ST-veM" firstAttribute="width" secondItem="iWk-Bd-qSW" secondAttribute="width" id="vSz-kD-8N6"/>
+                            <constraint firstAttribute="bottom" secondItem="Q2q-Va-dt8" secondAttribute="bottom" id="wWj-iT-5sO"/>
+                            <constraint firstAttribute="trailing" secondItem="78L-Lu-wnV" secondAttribute="trailing" constant="22" id="x66-g8-MBg"/>
+                            <constraint firstItem="clF-p1-Ur7" firstAttribute="top" secondItem="UdN-71-z0X" secondAttribute="bottom" constant="20" id="zb7-ke-vKy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mLastLocationLabel" destination="xiZ-k7-rBH" id="Qug-4J-L9H"/>
+                        <outlet property="mMapView" destination="Q2q-Va-dt8" id="16x-2R-eCc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oi3-Ir-lfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.5999999999999" y="26.53673163418291"/>
+        </scene>
+        <!--Parking Statistics View Controller-->
+        <scene sceneID="l4A-3D-qgR">
+            <objects>
+                <viewController id="3U8-PP-uQu" customClass="ParkingStatisticsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="11B-LF-uOL"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5r-Dg-pF8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W6w-le-Ih8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="mve-Pq-f8U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mve-Pq-f8U" firstAttribute="width" secondItem="W6w-le-Ih8" secondAttribute="width" id="RYP-jQ-jA7"/>
+                            <constraint firstItem="mve-Pq-f8U" firstAttribute="leading" secondItem="W6w-le-Ih8" secondAttribute="leading" id="fMc-yh-dxL"/>
+                            <constraint firstItem="mve-Pq-f8U" firstAttribute="bottom" secondItem="W6w-le-Ih8" secondAttribute="bottom" id="pA9-Ax-biu"/>
+                            <constraint firstItem="mve-Pq-f8U" firstAttribute="height" secondItem="W6w-le-Ih8" secondAttribute="height" id="tSA-Db-gD9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1W-AE-TsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="796"/>
+        </scene>
+        <!--Parking Results View Controller-->
+        <scene sceneID="4rz-vn-Rxs">
+            <objects>
+                <viewController id="FiZ-0d-0YC" customClass="ParkingResultsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vlS-qS-Xgl"/>
+                        <viewControllerLayoutGuide type="bottom" id="SOX-ep-diz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C2G-kd-fIj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="Op9-ga-OUK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Op9-ga-OUK" firstAttribute="leading" secondItem="C2G-kd-fIj" secondAttribute="leading" id="9ac-eF-puu"/>
+                            <constraint firstItem="Op9-ga-OUK" firstAttribute="height" secondItem="C2G-kd-fIj" secondAttribute="height" id="LS4-Ne-rfv"/>
+                            <constraint firstItem="Op9-ga-OUK" firstAttribute="width" secondItem="C2G-kd-fIj" secondAttribute="width" id="WO7-Mi-fZ5"/>
+                            <constraint firstItem="Op9-ga-OUK" firstAttribute="bottom" secondItem="C2G-kd-fIj" secondAttribute="bottom" id="ZRm-Ig-frk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQV-yB-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appback" width="297.63778686523438" height="419.527587890625"/>
+        <image name="dir1" width="73" height="69"/>
+        <image name="dir2" width="75" height="69"/>
+        <image name="logo" width="192" height="192"/>
+        <image name="splashback" width="297.63778686523438" height="419.527587890625"/>
+    </resources>
+</document>
