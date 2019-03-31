@@ -18,7 +18,6 @@ class ParkingSearchViewController: UIViewController {
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {

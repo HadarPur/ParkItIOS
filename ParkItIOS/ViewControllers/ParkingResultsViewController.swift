@@ -13,7 +13,6 @@ class ParkingResultsViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
 
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     
