@@ -26,6 +26,10 @@ class AboutUsViewController: UIViewController {
         self.mTextView.setContentOffset(CGPoint.zero, animated: false)
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        _=self.navigationController?.popViewController(animated: true)
+    }
+    
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.right {
             print("Swipe Right")

@@ -17,5 +17,7 @@ class ParkingStatisticsViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        _=self.navigationController?.popViewController(animated: true)
+    }
 }

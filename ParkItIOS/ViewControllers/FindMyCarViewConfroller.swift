@@ -42,9 +42,6 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
-        mLastLocationLabel.lineBreakMode = .byWordWrapping
-        mLastLocationLabel.numberOfLines = 3
-        
         checkGPS()
     }
     
@@ -82,7 +79,6 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
         setMyLocationOnTheMap(latitudeUser: self.mCurrentLat, longitudeUser: self.mCurrentLong)
     }
     
-    
     @IBAction func navigateViaGoogleMapsButtonClicked(_ sender: Any) {
         if UIApplication.shared.canOpenURL(URL(string: "comgooglemaps:")!) {
             UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=\(parkingLat),\(parkingLong)&daddr=\(mCurrentLat),\(mCurrentLong)&directionsmode=walking")!, options: [:], completionHandler: nil)
@@ -99,6 +95,11 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
             mFunctions.showToast(msg: "Can't open GoogleMaps App")
         }
     }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        _=self.navigationController?.popViewController(animated: true)
+    }
+    
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.right {
             print("Swipe Right")
@@ -108,7 +109,7 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     
     func setMyLocationOnTheMap(latitudeUser: Double, longitudeUser: Double) {
         self.mMapView.clear()
-        
+
         let latitude = latitudeUser
         let longitude = longitudeUser
         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 12)
@@ -141,7 +142,7 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     
     func setLocationOnTheMap(latitudeUser: Double, longitudeUser: Double, titleUser: String) {
         self.setMyLocationOnTheMap(latitudeUser: self.mCurrentLat, longitudeUser: self.mCurrentLong)
-        
+
         let latitude = latitudeUser
         let longitude = longitudeUser
         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 12)
@@ -168,7 +169,6 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
                 let address = locName+", "+locLocality
                 
                 marker.snippet = address
-
                 self.mLastLocationLabel.text = "Parking Location:\n" + address
             }
         })
@@ -176,5 +176,4 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
         self.mMapView.animate(to: camera)
         marker.map = self.mMapView
     }
-    
 }

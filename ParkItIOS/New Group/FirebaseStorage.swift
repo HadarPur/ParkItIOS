@@ -11,6 +11,14 @@ import FirebaseDatabase
 import UIKit
 
 public class FirebaseStorage {
+    
+    struct Street {
+        var cars: String
+        var rate: Double
+        var sensor: Int
+        var streetName: String
+    }
+    
     static let shared = FirebaseStorage()
 
     let mFunctions = FuncUtils()
@@ -44,6 +52,7 @@ public class FirebaseStorage {
         self.mRef.observeSingleEvent(of: .value, with: { (snapshot) in
             let iterator = snapshot.children
             while let child = iterator.nextObject() as? DataSnapshot {
+
                 print(child);
             }
             callback()
@@ -51,5 +60,6 @@ public class FirebaseStorage {
             print(error.localizedDescription)
         }
     }
+
 }
 

@@ -61,78 +61,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="appback" translatesAutoresizingMaskIntoConstraints="NO" id="dqE-Rm-JHe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="dqE-Rm-JHe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-IR-lQB" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="67" y="370" width="240" height="36"/>
-                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-IR-lQB" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="50" y="420" width="275" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vm8-fE-xQQ"/>
+                                    <constraint firstAttribute="width" constant="275" id="xii-hP-HE8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
-                                <state key="normal" title="Statistics">
-                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Statistics" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="3U8-PP-uQu" kind="show" id="cv9-ma-zaY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-kF-Smq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="67" y="430" width="240" height="36"/>
-                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMR-cE-kXj" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="50" y="352" width="275" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0ox-zn-xXZ"/>
+                                    <constraint firstAttribute="width" constant="275" id="qfV-SI-8IW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
-                                <state key="normal" title="About Us">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="EY4-mr-NXd" kind="show" id="s6g-jC-R9i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMR-cE-kXj" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="67" y="310" width="240" height="36"/>
-                                <color key="backgroundColor" red="0.099873416125774384" green="0.13735309243202209" blue="0.80582815408706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
-                                <state key="normal" title="Find My Car">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Find My Car" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="f2Q-K2-pil" kind="show" id="Leh-Az-zCR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-ka-XWq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="67" y="250" width="240" height="38"/>
-                                <color key="backgroundColor" red="0.099873416125774384" green="0.13735309243202209" blue="0.80582815408706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-ka-XWq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="50" y="284" width="275" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bhU-b4-MWK"/>
+                                    <constraint firstAttribute="width" constant="275" id="ghd-gd-aeM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
-                                <state key="normal" title="Find Parking Space">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Find Parking Space" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="3vn-h3-6cS" kind="show" id="9tM-0I-Pu2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-kF-Smq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="50" y="488" width="275" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="Bkj-6E-xaY"/>
+                                    <constraint firstAttribute="height" constant="60" id="LcN-1f-Ncw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <state key="normal" title="About Us" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EY4-mr-NXd" kind="show" id="s6g-jC-R9i"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkit" translatesAutoresizingMaskIntoConstraints="NO" id="C78-3u-K3L">
+                                <rect key="frame" x="50" y="91" width="275" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="2py-oS-rwf"/>
+                                    <constraint firstAttribute="height" constant="127" id="oRa-KC-M4A"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="width" secondItem="UoZ-ka-XWq" secondAttribute="width" id="1q5-8Z-SFN"/>
                             <constraint firstItem="dqE-Rm-JHe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="2iY-oR-grY"/>
-                            <constraint firstItem="XMR-cE-kXj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8VA-up-oNP"/>
-                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Apd-mA-5yq"/>
-                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="height" secondItem="UoZ-ka-XWq" secondAttribute="height" constant="-2" id="BOr-5j-7OF"/>
-                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="top" secondItem="gd7-RW-3KQ" secondAttribute="bottom" constant="230" id="HPw-Yb-huo"/>
+                            <constraint firstItem="C78-3u-K3L" firstAttribute="top" secondItem="gd7-RW-3KQ" secondAttribute="bottom" constant="71" id="4CM-LJ-pTd"/>
+                            <constraint firstItem="C78-3u-K3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5gX-EA-xUq"/>
+                            <constraint firstItem="C78-3u-K3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="BJJ-wA-Zkq"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="FBY-d6-RWx"/>
                             <constraint firstItem="dqE-Rm-JHe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NeO-A2-6Xs"/>
-                            <constraint firstItem="XMR-cE-kXj" firstAttribute="top" secondItem="UoZ-ka-XWq" secondAttribute="bottom" constant="22" id="OiP-hf-eUO"/>
-                            <constraint firstItem="XMR-cE-kXj" firstAttribute="height" secondItem="UoZ-ka-XWq" secondAttribute="height" constant="-2" id="PQ1-Kr-NGd"/>
-                            <constraint firstItem="IjI-IR-lQB" firstAttribute="top" secondItem="XMR-cE-kXj" secondAttribute="bottom" constant="24" id="RjW-nq-KfV"/>
                             <constraint firstItem="dqE-Rm-JHe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Uoz-qK-aG1"/>
-                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZZb-Zx-Z8R"/>
-                            <constraint firstItem="IjI-IR-lQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iYW-qg-LPO"/>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="top" secondItem="C78-3u-K3L" secondAttribute="bottom" constant="270" id="Vej-X6-qTz"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="VpR-Dh-ZDW"/>
+                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="top" secondItem="C78-3u-K3L" secondAttribute="bottom" constant="66" id="Wbg-qg-xwy"/>
+                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="ev0-wA-spf"/>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="f9C-fV-Kab"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fbs-WJ-Ran"/>
                             <constraint firstItem="dqE-Rm-JHe" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="kdd-go-DbI"/>
-                            <constraint firstItem="XMR-cE-kXj" firstAttribute="width" secondItem="UoZ-ka-XWq" secondAttribute="width" id="ktJ-Nv-Jhm"/>
-                            <constraint firstItem="IjI-IR-lQB" firstAttribute="width" secondItem="UoZ-ka-XWq" secondAttribute="width" id="p5M-HJ-Q0M"/>
-                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="top" secondItem="IjI-IR-lQB" secondAttribute="bottom" constant="24" id="xBp-lj-N3r"/>
-                            <constraint firstItem="IjI-IR-lQB" firstAttribute="height" secondItem="UoZ-ka-XWq" secondAttribute="height" constant="-2" id="yZ7-mU-D5M"/>
+                            <constraint firstItem="UoZ-ka-XWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r6D-Ru-N7K"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="upE-Rd-TAN"/>
+                            <constraint firstItem="Bdv-kF-Smq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uw1-IE-9u4"/>
+                            <constraint firstItem="XMR-cE-kXj" firstAttribute="top" secondItem="C78-3u-K3L" secondAttribute="bottom" constant="134" id="v6D-kK-6gI"/>
+                            <constraint firstItem="IjI-IR-lQB" firstAttribute="top" secondItem="C78-3u-K3L" secondAttribute="bottom" constant="202" id="vJ7-Es-ksm"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
@@ -162,19 +182,41 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-oN-kLF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOV-ZO-zrO" userLabel="BackButton">
+                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6wq-De-3CY"/>
+                                    <constraint firstAttribute="width" constant="40" id="gNa-w1-0dH"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="3vn-h3-6cS" eventType="touchUpInside" id="R3F-8f-L4r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Parking Space" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cba-qj-8pL">
+                                <rect key="frame" x="59" y="42" width="257" height="88"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cba-qj-8pL" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="59" id="9RX-w8-frg"/>
+                            <constraint firstItem="UOV-ZO-zrO" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="16" id="MeZ-JN-H2u"/>
+                            <constraint firstItem="cba-qj-8pL" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="WPs-iI-CzI"/>
+                            <constraint firstItem="cba-qj-8pL" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="22" id="hUn-wc-HSK"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="height" secondItem="8lV-fH-M47" secondAttribute="height" id="nBH-6b-4K8"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="bottom" secondItem="8lV-fH-M47" secondAttribute="bottom" id="oiF-Rj-coO"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="width" secondItem="8lV-fH-M47" secondAttribute="width" id="p9e-7A-dni"/>
+                            <constraint firstItem="UOV-ZO-zrO" firstAttribute="top" secondItem="cba-qj-8pL" secondAttribute="top" id="rvJ-D8-i3i"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" id="zEm-MH-Tpg"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xn-SN-eUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="-676"/>
+            <point key="canvasLocation" x="1029.5999999999999" y="-676.01199400299856"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="MqA-BD-tgU">
@@ -222,16 +264,29 @@ Park it, parking fast and parking light.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZY-gv-6qJ" userLabel="BackButton">
+                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LfE-ng-dxI"/>
+                                    <constraint firstAttribute="height" constant="40" id="kc0-xs-ZzM"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="EY4-mr-NXd" eventType="touchUpInside" id="zsV-G8-cF0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ThC-Oj-APE" firstAttribute="top" secondItem="7e9-yh-tsV" secondAttribute="bottom" constant="20" id="1fp-TU-gGw"/>
                             <constraint firstItem="Pxo-BD-opf" firstAttribute="width" secondItem="9MP-l5-gWm" secondAttribute="width" id="A3M-Y2-Okv"/>
                             <constraint firstItem="Pxo-BD-opf" firstAttribute="bottom" secondItem="9MP-l5-gWm" secondAttribute="bottom" id="Fxi-mm-JVB"/>
+                            <constraint firstItem="MZY-gv-6qJ" firstAttribute="top" secondItem="YuM-El-0pA" secondAttribute="top" id="LhP-DH-bxQ"/>
                             <constraint firstItem="YuM-El-0pA" firstAttribute="top" secondItem="L6C-dp-Prk" secondAttribute="bottom" constant="22" id="REJ-p2-HS9"/>
                             <constraint firstItem="7e9-yh-tsV" firstAttribute="top" secondItem="L6C-dp-Prk" secondAttribute="bottom" constant="90" id="aB7-kE-zgY"/>
                             <constraint firstItem="7e9-yh-tsV" firstAttribute="leading" secondItem="9MP-l5-gWm" secondAttribute="leading" id="bUI-Hz-JKC"/>
                             <constraint firstItem="Pxo-BD-opf" firstAttribute="leading" secondItem="9MP-l5-gWm" secondAttribute="leading" id="p2P-BE-Dsx"/>
+                            <constraint firstItem="MZY-gv-6qJ" firstAttribute="leading" secondItem="9MP-l5-gWm" secondAttribute="leading" constant="16" id="qDn-aL-nG2"/>
                             <constraint firstItem="Pxo-BD-opf" firstAttribute="height" secondItem="9MP-l5-gWm" secondAttribute="height" id="qSw-b7-UZJ"/>
                             <constraint firstItem="7e9-yh-tsV" firstAttribute="centerX" secondItem="9MP-l5-gWm" secondAttribute="centerX" id="qym-fk-rah"/>
                             <constraint firstItem="YuM-El-0pA" firstAttribute="centerX" secondItem="9MP-l5-gWm" secondAttribute="centerX" id="tdo-LE-IhN"/>
@@ -266,7 +321,7 @@ Park it, parking fast and parking light.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-k7-rBH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-k7-rBH">
                                 <rect key="frame" x="16" y="107" width="207" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="G18-Qe-Dts"/>
@@ -276,52 +331,48 @@ Park it, parking fast and parking light.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hs-XB-f0H" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hs-XB-f0H" userLabel="SaveButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
                                 <rect key="frame" x="245" y="107" width="108" height="31"/>
-                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="4hO-WI-YfG"/>
                                     <constraint firstAttribute="width" secondItem="0hs-XB-f0H" secondAttribute="height" multiplier="108:31" id="Eue-jQ-84V"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="nZS-w1-Yoe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Save" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="saveButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="bsX-9q-ADo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78L-Lu-wnV" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78L-Lu-wnV" userLabel="FindButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
                                 <rect key="frame" x="245" y="144" width="108" height="36"/>
-                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Bho-9G-hBc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="UHp-ct-yMM"/>
                                     <constraint firstAttribute="width" secondItem="78L-Lu-wnV" secondAttribute="height" multiplier="3:1" id="pnz-Zm-zZs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <state key="normal" title="Find">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Find" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="findButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="lMX-aN-0jH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-Wc-ytX" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-Wc-ytX" userLabel="ResetButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
                                 <rect key="frame" x="245" y="185" width="108" height="36"/>
-                                <color key="backgroundColor" red="0.099873416130000003" green="0.13735309239999999" blue="0.80582815409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Nks-Wc-ytX" secondAttribute="height" multiplier="3:1" id="80j-Co-M5U"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="Op2-VF-guw"/>
                                     <constraint firstAttribute="height" constant="36" id="Y66-gV-cxK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Reset" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="findButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="x7s-bc-goI"/>
                                     <action selector="resetButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="g9m-A2-O5Z"/>
                                 </connections>
                             </button>
@@ -349,10 +400,22 @@ Park it, parking fast and parking light.</string>
                                     <action selector="navigateViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="75S-jl-047"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw5-yM-A33" userLabel="BackButton">
+                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="pfV-FF-Wjm"/>
+                                    <constraint firstAttribute="height" constant="40" id="qsO-jY-UMb"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="f2Q-K2-pil" eventType="touchUpInside" id="gkD-Su-PWR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Nks-Wc-ytX" firstAttribute="width" secondItem="Nks-Wc-ytX" secondAttribute="height" multiplier="3:1" id="0zn-nB-FNM"/>
+                            <constraint firstItem="sw5-yM-A33" firstAttribute="top" secondItem="9iP-du-0RH" secondAttribute="top" id="53h-wm-ekg"/>
                             <constraint firstItem="Nks-Wc-ytX" firstAttribute="width" secondItem="78L-Lu-wnV" secondAttribute="width" id="6aG-Go-B56"/>
                             <constraint firstAttribute="trailing" secondItem="0hs-XB-f0H" secondAttribute="trailing" constant="22" id="A1d-nP-hFu"/>
                             <constraint firstItem="Nks-Wc-ytX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiZ-k7-rBH" secondAttribute="trailing" constant="8" symbolic="YES" id="B1p-nq-UnA"/>
@@ -364,6 +427,7 @@ Park it, parking fast and parking light.</string>
                             <constraint firstItem="78L-Lu-wnV" firstAttribute="width" secondItem="0hs-XB-f0H" secondAttribute="width" id="UGD-ns-aFf"/>
                             <constraint firstItem="Nks-Wc-ytX" firstAttribute="top" secondItem="9iP-du-0RH" secondAttribute="bottom" constant="99" id="WdI-Kn-dMM"/>
                             <constraint firstItem="0hs-XB-f0H" firstAttribute="top" secondItem="uwz-0v-R5C" secondAttribute="bottom" constant="87" id="Zns-Ke-QZv"/>
+                            <constraint firstItem="sw5-yM-A33" firstAttribute="leading" secondItem="iWk-Bd-qSW" secondAttribute="leading" constant="16" id="a2A-au-4XA"/>
                             <constraint firstItem="0hs-XB-f0H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiZ-k7-rBH" secondAttribute="trailing" constant="8" symbolic="YES" id="ahQ-v0-Jef"/>
                             <constraint firstItem="UdN-71-z0X" firstAttribute="width" secondItem="cG2-tV-JnW" secondAttribute="width" id="awE-j9-8wd"/>
                             <constraint firstItem="9iP-du-0RH" firstAttribute="centerX" secondItem="iWk-Bd-qSW" secondAttribute="centerX" id="b05-LU-6Vj"/>
@@ -412,19 +476,97 @@ Park it, parking fast and parking light.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="mve-Pq-f8U">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irw-eR-VNS" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="197" width="375" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa2-An-R7J" userLabel="dir2">
+                                <rect key="frame" x="327" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ByR-Dg-oeH"/>
+                                    <constraint firstAttribute="height" constant="40" id="cGc-nf-Xx9"/>
+                                </constraints>
+                                <state key="normal" image="dir2">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeLocationViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="Mog-8I-jvY"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-Kz-4ht" userLabel="dir1">
+                                <rect key="frame" x="279" y="607" width="40" height="40"/>
+                                <state key="normal" image="dir1"/>
+                                <connections>
+                                    <action selector="navigateViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="yM9-GN-elH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDn-ih-HM9">
+                                <rect key="frame" x="101.5" y="42" width="172" height="44"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-GP-le6" userLabel="BackButton">
+                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9tB-tG-yOJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="JKT-in-JpD"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="3U8-PP-uQu" eventType="touchUpInside" id="rnd-Pc-CAx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LW-dZ-zKQ" userLabel="SearchButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="133.5" y="153" width="108" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Aga-F3-knF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="Wj6-yb-ap0"/>
+                                    <constraint firstAttribute="width" secondItem="3LW-dZ-zKQ" secondAttribute="height" multiplier="3:1" id="gSO-4g-Hdf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Reset" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="xW0-o7-yeh"/>
+                                    <action selector="resetButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="dxx-Qy-KZf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FDn-ih-HM9" firstAttribute="top" secondItem="11B-LF-uOL" secondAttribute="bottom" constant="22" id="18L-lu-wAI"/>
+                            <constraint firstItem="3LW-dZ-zKQ" firstAttribute="centerX" secondItem="W6w-le-Ih8" secondAttribute="centerX" id="1GF-0y-S4j"/>
+                            <constraint firstItem="Irw-eR-VNS" firstAttribute="centerX" secondItem="W6w-le-Ih8" secondAttribute="centerX" id="2oG-W0-hvU"/>
+                            <constraint firstItem="Irw-eR-VNS" firstAttribute="width" secondItem="W6w-le-Ih8" secondAttribute="width" id="ESL-Rk-LIp"/>
+                            <constraint firstItem="Irw-eR-VNS" firstAttribute="top" secondItem="3LW-dZ-zKQ" secondAttribute="bottom" constant="8" id="Ifp-dv-o2r"/>
+                            <constraint firstItem="FDn-ih-HM9" firstAttribute="centerX" secondItem="W6w-le-Ih8" secondAttribute="centerX" id="Ma5-Gg-hVo"/>
+                            <constraint firstAttribute="bottom" secondItem="Irw-eR-VNS" secondAttribute="bottom" id="Nto-wL-i3Q"/>
+                            <constraint firstAttribute="trailing" secondItem="Aa2-An-R7J" secondAttribute="trailing" constant="8" id="PM6-PT-n4M"/>
+                            <constraint firstItem="w5r-Dg-pF8" firstAttribute="top" secondItem="Aa2-An-R7J" secondAttribute="bottom" constant="20" id="QGX-Bp-sQJ"/>
+                            <constraint firstItem="5ew-Kz-4ht" firstAttribute="top" secondItem="Aa2-An-R7J" secondAttribute="bottom" constant="-40" id="RQe-nK-PvU"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="width" secondItem="W6w-le-Ih8" secondAttribute="width" id="RYP-jQ-jA7"/>
+                            <constraint firstItem="3LW-dZ-zKQ" firstAttribute="width" secondItem="3LW-dZ-zKQ" secondAttribute="height" multiplier="3:1" id="Rfw-S8-rKo"/>
+                            <constraint firstItem="3LW-dZ-zKQ" firstAttribute="top" secondItem="11B-LF-uOL" secondAttribute="bottom" constant="133" id="TWO-4b-00i"/>
+                            <constraint firstItem="Aa2-An-R7J" firstAttribute="leading" secondItem="5ew-Kz-4ht" secondAttribute="trailing" constant="8" id="Xxh-Zj-xoX"/>
+                            <constraint firstItem="5ew-Kz-4ht" firstAttribute="width" secondItem="Aa2-An-R7J" secondAttribute="width" id="c0B-bR-gUS"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="leading" secondItem="W6w-le-Ih8" secondAttribute="leading" id="fMc-yh-dxL"/>
+                            <constraint firstItem="3LW-dZ-zKQ" firstAttribute="width" secondItem="3LW-dZ-zKQ" secondAttribute="height" multiplier="3:1" id="hdj-sh-WY1"/>
+                            <constraint firstItem="w5r-Dg-pF8" firstAttribute="top" secondItem="5ew-Kz-4ht" secondAttribute="bottom" constant="20" id="hiY-Ac-VKn"/>
+                            <constraint firstItem="3LW-dZ-zKQ" firstAttribute="leading" secondItem="W6w-le-Ih8" secondAttribute="leading" constant="133.5" id="kPb-G6-21t"/>
+                            <constraint firstItem="rZV-GP-le6" firstAttribute="leading" secondItem="W6w-le-Ih8" secondAttribute="leading" constant="16" id="nDI-Mp-Nw3"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="bottom" secondItem="W6w-le-Ih8" secondAttribute="bottom" id="pA9-Ax-biu"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="height" secondItem="W6w-le-Ih8" secondAttribute="height" id="tSA-Db-gD9"/>
+                            <constraint firstItem="5ew-Kz-4ht" firstAttribute="height" secondItem="Aa2-An-R7J" secondAttribute="height" id="tVq-Zb-czO"/>
+                            <constraint firstItem="Irw-eR-VNS" firstAttribute="top" secondItem="11B-LF-uOL" secondAttribute="bottom" constant="177" id="uBa-af-8la"/>
+                            <constraint firstItem="rZV-GP-le6" firstAttribute="top" secondItem="FDn-ih-HM9" secondAttribute="top" id="y61-dh-yjy"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1W-AE-TsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="796"/>
+            <point key="canvasLocation" x="1029.5999999999999" y="795.6521739130435"/>
         </scene>
         <!--Parking Results View Controller-->
         <scene sceneID="4rz-vn-Rxs">
@@ -453,14 +595,16 @@ Park it, parking fast and parking light.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQV-yB-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2111" y="27"/>
+            <point key="canvasLocation" x="1913" y="-676"/>
         </scene>
     </scenes>
     <resources>
-        <image name="appback" width="297.63778686523438" height="419.527587890625"/>
+        <image name="back" width="300" height="300"/>
+        <image name="buttonimg" width="600" height="200"/>
         <image name="dir1" width="73" height="69"/>
         <image name="dir2" width="75" height="69"/>
         <image name="logo" width="192" height="192"/>
+        <image name="parkit" width="850" height="472"/>
         <image name="splashback" width="297.63778686523438" height="419.527587890625"/>
     </resources>
 </document>

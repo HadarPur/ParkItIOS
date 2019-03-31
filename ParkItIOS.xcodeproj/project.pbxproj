@@ -18,7 +18,6 @@
 		3E5DCFE2224B7ED0005E05DB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */; };
 		3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */; };
 		3E5DCFE6224BB512005E05DB /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */; };
-		3E5DCFEC224BBAEE005E05DB /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFEB224BBAEE005E05DB /* Street.swift */; };
 		3E5DCFEF224BC5A1005E05DB /* CalaDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */; };
 		3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */; };
 		3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C1224CDAD90058D419 /* Reachability.swift */; };
@@ -66,7 +65,6 @@
 		3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsHandler.swift; sourceTree = "<group>"; };
 		3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
-		3E5DCFEB224BBAEE005E05DB /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 		3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalaDistance.swift; sourceTree = "<group>"; };
 		3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3EB3B4C1224CDAD90058D419 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 		3E5DCFEA224BBAD6005E05DB /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				3E5DCFEB224BBAEE005E05DB /* Street.swift */,
 				3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */,
 			);
 			path = Logic;
@@ -504,7 +501,6 @@
 				3EFF855F22079C720020E0BC /* MainViewController.swift in Sources */,
 				3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */,
 				3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */,
-				3E5DCFEC224BBAEE005E05DB /* Street.swift in Sources */,
 				3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */,
 				3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */,
 				3E413E562248C7F6002BAA5D /* ParkingStatisticsViewController.swift in Sources */,
@@ -696,6 +692,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -715,6 +712,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Hadar.ParkItIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
