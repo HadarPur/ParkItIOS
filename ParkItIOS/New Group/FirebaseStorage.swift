@@ -52,6 +52,8 @@ public class FirebaseStorage {
         self.mRef.observeSingleEvent(of: .value, with: { (snapshot) in
             let iterator = snapshot.children
             while let child = iterator.nextObject() as? DataSnapshot {
+                
+//                let Street = try JSONDecoder().decode(Swifter.self, from: child) // Decoding our data
 
                 print(child);
             }

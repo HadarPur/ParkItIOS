@@ -9,11 +9,10 @@
 import UIKit
 
 class ParkingStatisticsViewController: UIViewController {
-    var hoursData = ["Pick hour","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]
+    var hoursData = [["Pick a street"],["Pick hour","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]]
     
-    var mHoursViewPicker = UIPickerView()
+    var mPickerView : UIPickerView!
 
-    @IBOutlet weak var mStreetTextField: UITextField!
     @IBOutlet weak var mHourTextField: UITextField!
     
     var mParkingLat = 0.0
@@ -30,12 +29,42 @@ class ParkingStatisticsViewController: UIViewController {
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
-        // Connect data:
-        self.mHoursViewPicker.delegate = self
-        self.mHoursViewPicker.dataSource = self
+        self.pickUp(mHourTextField)
+        mHourTextField.text = self.hoursData[0][0] + " - " + self.hoursData[1][0]
+    }
+    
+    func pickUp(_ textField : UITextField){
         
-        mHourTextField.inputView = mHoursViewPicker
-        mHourTextField.text = hoursData[0]
+        // UIPickerView
+        self.mPickerView = UIPickerView(frame:CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 216))
+        self.mPickerView.delegate = self
+        self.mPickerView.dataSource = self
+        self.mPickerView.backgroundColor = UIColor.white
+        textField.inputView = self.mPickerView
+        
+        // ToolBar
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 92/255, green: 216/255, blue: 255/255, alpha: 1)
+        toolBar.sizeToFit()
+        
+        // Adding Button ToolBar
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneClick))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelClick))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        textField.inputAccessoryView = toolBar
+    }
+    
+    //MARK:- Button
+    @objc func doneClick() {
+        self.view.endEditing(true)
+    }
+    
+    @objc func cancelClick() {
+        self.view.endEditing(true)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -48,11 +77,10 @@ class ParkingStatisticsViewController: UIViewController {
     
     @IBAction func searchButtonClicked(_ sender: Any) {
         self.view.endEditing(true)
-
     }
     
     @IBAction func textFieldEditing(_ sender: TextField) {
-        sender.inputView = mHoursViewPicker
+        self.pickUp(sender)
     }
     
     @IBAction func seeLocationViaGoogleMapsButtonClicked(_ sender: Any) {
@@ -71,23 +99,23 @@ class ParkingStatisticsViewController: UIViewController {
     }
 }
 
-extension ParkingStatisticsViewController: UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+extension ParkingStatisticsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1;
+        return 2;
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return hoursData.count
+        return hoursData[component].count
+
     }
     
-    // The data to return fopr the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return hoursData[row]
+        return hoursData[component][row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        mHourTextField.text = hoursData[row]
+        let street =  hoursData[0][pickerView.selectedRow(inComponent: 0)]
+        let hour = hoursData[1][pickerView.selectedRow(inComponent: 1)]
+        mHourTextField.text =   street + " - " + hour
     }
-    
-    
 }
