@@ -20,6 +20,8 @@
 		3E5DCFE6224BB512005E05DB /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */; };
 		3E5DCFEF224BC5A1005E05DB /* CalaDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */; };
 		3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */; };
+		3E76B88222514C980099FEF4 /* GoogleMapsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B88122514C980099FEF4 /* GoogleMapsUtils.swift */; };
+		3E76B8862252352F0099FEF4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B8852252352F0099FEF4 /* TextField.swift */; };
 		3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C1224CDAD90058D419 /* Reachability.swift */; };
 		3EB3B4C4224CDC0A0058D419 /* ButtonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */; };
 		3EF5BF8A2248F368001E8264 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5BF892248F368001E8264 /* AboutUsViewController.swift */; };
@@ -67,6 +69,8 @@
 		3E5DCFE5224BB512005E05DB /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
 		3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalaDistance.swift; sourceTree = "<group>"; };
 		3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		3E76B88122514C980099FEF4 /* GoogleMapsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsUtils.swift; sourceTree = "<group>"; };
+		3E76B8852252352F0099FEF4 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3EB3B4C1224CDAD90058D419 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtentions.swift; sourceTree = "<group>"; };
 		3EF5BF892248F368001E8264 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */,
 				3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */,
 				3EB3B4C1224CDAD90058D419 /* Reachability.swift */,
+				3E76B88122514C980099FEF4 /* GoogleMapsUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				3EFF856822079C730020E0BC /* LaunchScreen.storyboard */,
 				3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */,
 				3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */,
+				3E76B8852252352F0099FEF4 /* TextField.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */,
+				3E76B88222514C980099FEF4 /* GoogleMapsUtils.swift in Sources */,
 				3E413E522248C760002BAA5D /* ParkingSearchViewController.swift in Sources */,
 				3EB3B4C4224CDC0A0058D419 /* ButtonExtentions.swift in Sources */,
 				3E5DCFE0224B7EA9005E05DB /* FuncUtils.swift in Sources */,
@@ -502,6 +509,7 @@
 				3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */,
 				3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */,
 				3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */,
+				3E76B8862252352F0099FEF4 /* TextField.swift in Sources */,
 				3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */,
 				3E413E562248C7F6002BAA5D /* ParkingStatisticsViewController.swift in Sources */,
 				3E413E592248C86F002BAA5D /* FindMyCarViewConfroller.swift in Sources */,

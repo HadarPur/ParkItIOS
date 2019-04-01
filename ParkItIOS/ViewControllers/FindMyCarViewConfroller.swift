@@ -12,7 +12,7 @@ import MapKit
 import GoogleMaps
 
 class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
-    let mFunctions = FuncUtils()
+    let mLocationManager = CLLocationManager()
 
     struct defaultsKeys {
         static let long = "longKey"
@@ -21,13 +21,10 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     
     @IBOutlet weak var mMapView: GMSMapView!
     @IBOutlet weak var mLastLocationLabel: UILabel!
-    @IBOutlet weak var mGoogleMapLocationButton: UIButton!
-    @IBOutlet weak var mGoogleMapRouteButton: UIButton!
     
-    var parkingLat = 0.0
-    var parkingLong = 0.0
+    var mParkingLat = 0.0
+    var mParkingLong = 0.0
     
-    let mLocationManager = CLLocationManager()
     var mCurrentLat = 0.0
     var mCurrentLong = 0.0
     
@@ -66,13 +63,13 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
         let defaults = UserDefaults.standard
 
         if let long = defaults.string(forKey: defaultsKeys.long) {
-            parkingLong = Double(long)!
+            mParkingLong = Double(long)!
         }
         if let lat = defaults.string(forKey: defaultsKeys.lat) {
-            parkingLat = Double(lat)!
+            mParkingLat = Double(lat)!
         }
         
-        setLocationOnTheMap(latitudeUser: parkingLat, longitudeUser: parkingLong, titleUser: "Parking Location")
+        setLocationOnTheMap(latitudeUser: mParkingLat, longitudeUser: mParkingLong, titleUser: "Parking Location")
     }
     
     @IBAction func resetButtonClicked(_ sender: Any) {
@@ -80,20 +77,11 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     }
     
     @IBAction func navigateViaGoogleMapsButtonClicked(_ sender: Any) {
-        if UIApplication.shared.canOpenURL(URL(string: "comgooglemaps:")!) {
-            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=\(parkingLat),\(parkingLong)&daddr=\(mCurrentLat),\(mCurrentLong)&directionsmode=walking")!, options: [:], completionHandler: nil)
-        } else {
-            mFunctions.showToast(msg: "Can't open GoogleMaps App")
-        }
+        GoogleMapsUtils().navigateWithGoogleMaps(parkingLat: mParkingLat, parkingLong: mParkingLong, currentLat: mCurrentLat, currentLong: mCurrentLong)
     }
     
     @IBAction func seeLocationViaGoogleMapsButtonClicked(_ sender: Any) {
-        if UIApplication.shared.canOpenURL(URL(string: "comgooglemaps:")!) {
-            UIApplication.shared.open(URL(string:
-                "comgooglemaps://?center=\(mCurrentLat),\(mCurrentLong).975866&zoom=14")!, options: [:], completionHandler: nil)
-        } else {
-            mFunctions.showToast(msg: "Can't open GoogleMaps App")
-        }
+        GoogleMapsUtils().locateWithGoogleMaps(currentLat: mCurrentLat, currentLong: mCurrentLong)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {

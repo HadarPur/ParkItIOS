@@ -11,6 +11,7 @@ import UIKit
 
 class FuncUtils: NSObject {
     var mLoadingAlertController : UIAlertController! = nil
+    var mVC: UIViewController!
     
     public func showToast(msg: String) {
         guard let appWindow = UIApplication.shared.keyWindow else { fatalError("cannot use keyWindow") }
