@@ -36,7 +36,6 @@ class MainViewController: UIViewController {
         mFirebaseSingleton.readData {
             self.mFunctions.hideAlertActivityIndicator(viewController: self)
             self.mLocationManager.requestWhenInUseAuthorization()
-
         }
     }
     

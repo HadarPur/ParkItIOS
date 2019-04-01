@@ -35,10 +35,7 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
         self.mLocationManager.delegate = self
         self.mLocationManager.requestWhenInUseAuthorization()
         
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeRight.direction = .right
-        self.view.addGestureRecognizer(swipeRight)
-        
+        observerToSwipe()
         checkGPS()
     }
     
@@ -86,13 +83,6 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     
     @IBAction func backButtonPressed(_ sender: Any) {
         _=self.navigationController?.popViewController(animated: true)
-    }
-    
-    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
-        if gesture.direction == UISwipeGestureRecognizer.Direction.right {
-            print("Swipe Right")
-            _=self.navigationController?.popViewController(animated: true)
-        }
     }
     
     func setMyLocationOnTheMap(latitudeUser: Double, longitudeUser: Double) {

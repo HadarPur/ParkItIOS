@@ -13,23 +13,10 @@ class ParkingSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
-
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeRight.direction = .right
-        self.view.addGestureRecognizer(swipeRight)
-        
+        observerToSwipe()
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         _=self.navigationController?.popViewController(animated: true)
     }
-    
-    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
-        if gesture.direction == UISwipeGestureRecognizer.Direction.right {
-            print("Swipe Right")
-            _=self.navigationController?.popViewController(animated: true)
-        }
-    }
-    
-    
 }

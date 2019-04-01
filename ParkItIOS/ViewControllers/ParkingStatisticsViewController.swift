@@ -25,9 +25,7 @@ class ParkingStatisticsViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
 
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeRight.direction = .right
-        self.view.addGestureRecognizer(swipeRight)
+        observerToSwipe()
         
         self.pickUp(mHourTextField)
         mHourTextField.text = self.hoursData[0][0] + " - " + self.hoursData[1][0]
@@ -85,13 +83,6 @@ class ParkingStatisticsViewController: UIViewController {
     
     @IBAction func seeLocationViaGoogleMapsButtonClicked(_ sender: Any) {
         GoogleMapsUtils().locateWithGoogleMaps(currentLat: mCurrentLat, currentLong: mCurrentLong)
-    }
-    
-    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
-        if gesture.direction == UISwipeGestureRecognizer.Direction.right {
-            print("Swipe Right")
-            _=self.navigationController?.popViewController(animated: true)
-        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

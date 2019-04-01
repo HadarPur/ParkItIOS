@@ -22,8 +22,9 @@
 		3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */; };
 		3E76B88222514C980099FEF4 /* GoogleMapsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B88122514C980099FEF4 /* GoogleMapsUtils.swift */; };
 		3E76B8862252352F0099FEF4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B8852252352F0099FEF4 /* TextField.swift */; };
+		3E76B88822527DBE0099FEF4 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B88722527DBE0099FEF4 /* UIViewControllerExtention.swift */; };
 		3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C1224CDAD90058D419 /* Reachability.swift */; };
-		3EB3B4C4224CDC0A0058D419 /* ButtonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */; };
+		3EB3B4C4224CDC0A0058D419 /* ButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C3224CDC0A0058D419 /* ButtonExtention.swift */; };
 		3EF5BF8A2248F368001E8264 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5BF892248F368001E8264 /* AboutUsViewController.swift */; };
 		3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF855C22079C720020E0BC /* AppDelegate.swift */; };
 		3EFF855F22079C720020E0BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF855E22079C720020E0BC /* MainViewController.swift */; };
@@ -71,8 +72,9 @@
 		3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3E76B88122514C980099FEF4 /* GoogleMapsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsUtils.swift; sourceTree = "<group>"; };
 		3E76B8852252352F0099FEF4 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3E76B88722527DBE0099FEF4 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		3EB3B4C1224CDAD90058D419 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtentions.swift; sourceTree = "<group>"; };
+		3EB3B4C3224CDC0A0058D419 /* ButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtention.swift; sourceTree = "<group>"; };
 		3EF5BF892248F368001E8264 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		3EFF855922079C720020E0BC /* ParkItIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkItIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFF855C22079C720020E0BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,10 +178,18 @@
 				3EFF856622079C730020E0BC /* Assets.xcassets */,
 				3EFF856822079C730020E0BC /* LaunchScreen.storyboard */,
 				3E5DCFF0224BCA2A005E05DB /* RoundButton.swift */,
-				3EB3B4C3224CDC0A0058D419 /* ButtonExtentions.swift */,
 				3E76B8852252352F0099FEF4 /* TextField.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		3E76B889225281000099FEF4 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3E76B88722527DBE0099FEF4 /* UIViewControllerExtention.swift */,
+				3EB3B4C3224CDC0A0058D419 /* ButtonExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		3EFF855022079C720020E0BC = {
@@ -207,6 +217,7 @@
 		3EFF855B22079C720020E0BC /* ParkItIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3E76B889225281000099FEF4 /* Extentions */,
 				3E5DCFED224BC238005E05DB /* UI */,
 				3E5DCFEA224BBAD6005E05DB /* Logic */,
 				3E5DCFE7224BB516005E05DB /* Singletons */,
@@ -501,13 +512,14 @@
 				3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */,
 				3E76B88222514C980099FEF4 /* GoogleMapsUtils.swift in Sources */,
 				3E413E522248C760002BAA5D /* ParkingSearchViewController.swift in Sources */,
-				3EB3B4C4224CDC0A0058D419 /* ButtonExtentions.swift in Sources */,
+				3EB3B4C4224CDC0A0058D419 /* ButtonExtention.swift in Sources */,
 				3E5DCFE0224B7EA9005E05DB /* FuncUtils.swift in Sources */,
 				3EF5BF8A2248F368001E8264 /* AboutUsViewController.swift in Sources */,
 				3EFF856522079C720020E0BC /* ParkItIOS.xcdatamodeld in Sources */,
 				3EFF855F22079C720020E0BC /* MainViewController.swift in Sources */,
 				3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */,
 				3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */,
+				3E76B88822527DBE0099FEF4 /* UIViewControllerExtention.swift in Sources */,
 				3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */,
 				3E76B8862252352F0099FEF4 /* TextField.swift in Sources */,
 				3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */,

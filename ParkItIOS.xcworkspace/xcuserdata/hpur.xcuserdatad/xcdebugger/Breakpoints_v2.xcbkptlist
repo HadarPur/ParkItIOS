@@ -10,7 +10,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParkItIOS/ViewControllers/MainViewController.swift"
-            timestampString = "575830459.741527"
+            timestampString = "575832215.387656"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "checkParameters()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ParkItIOS/ViewControllers/MainViewController.swift"
+            timestampString = "575832215.387728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -26,27 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParkItIOS/ViewControllers/MainViewController.swift"
-            timestampString = "575830459.741598"
+            timestampString = "575832215.387781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "checkParameters()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ParkItIOS/ViewControllers/MainViewController.swift"
-            timestampString = "575830459.741652"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "locationManager(_:didChangeAuthorization:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParkItIOS/ViewControllers/ParkingStatisticsViewController.swift"
-            timestampString = "575830459.741704"
+            timestampString = "575832215.387836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "pickerView(_:didSelectRow:inComponent:)"
             landmarkType = "7">
          </BreakpointContent>
