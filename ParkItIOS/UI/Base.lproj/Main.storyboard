@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ezi-DM-lgV">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,14 @@
                         <viewControllerLayoutGuide type="bottom" id="TCi-OH-sjF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hhI-2n-8F7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-Hn-19r">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fCd-iN-BBY">
-                                <rect key="frame" x="112" y="258" width="145" height="145"/>
+                                <rect key="frame" x="112" y="282" width="184" height="326"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,7 +42,7 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="mImageView" destination="fCd-iN-BBY" id="s1y-hp-3fC"/>
+                        <outlet property="mImageView" destination="fCd-iN-BBY" id="bOg-me-DVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlE-Qi-5cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,14 +58,14 @@
                         <viewControllerLayoutGuide type="bottom" id="bgH-Ay-8Ja"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="dqE-Rm-JHe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-IR-lQB" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="50" y="420" width="275" height="60"/>
+                                <rect key="frame" x="69.666666666666686" y="444" width="275" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="vm8-fE-xQQ"/>
                                     <constraint firstAttribute="width" constant="275" id="xii-hP-HE8"/>
@@ -76,11 +76,11 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3U8-PP-uQu" kind="show" id="cv9-ma-zaY"/>
+                                    <action selector="statisticsButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Det-ud-Jlr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMR-cE-kXj" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="50" y="352" width="275" height="60"/>
+                                <rect key="frame" x="69.666666666666686" y="376" width="275" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0ox-zn-xXZ"/>
                                     <constraint firstAttribute="width" constant="275" id="qfV-SI-8IW"/>
@@ -91,11 +91,11 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="f2Q-K2-pil" kind="show" id="Leh-Az-zCR"/>
+                                    <action selector="findMyCarButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCp-HF-bXV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-ka-XWq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="50" y="284" width="275" height="60"/>
+                                <rect key="frame" x="69.666666666666686" y="308" width="275" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bhU-b4-MWK"/>
                                     <constraint firstAttribute="width" constant="275" id="ghd-gd-aeM"/>
@@ -106,11 +106,11 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3vn-h3-6cS" kind="show" id="9tM-0I-Pu2"/>
+                                    <action selector="findParkingSpaceButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTR-Wg-NAj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-kF-Smq" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="50" y="488" width="275" height="60"/>
+                                <rect key="frame" x="69.666666666666686" y="512" width="275" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="Bkj-6E-xaY"/>
                                     <constraint firstAttribute="height" constant="60" id="LcN-1f-Ncw"/>
@@ -121,11 +121,11 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EY4-mr-NXd" kind="show" id="s6g-jC-R9i"/>
+                                    <action selector="aboutUsButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPl-YM-Xzo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkit" translatesAutoresizingMaskIntoConstraints="NO" id="C78-3u-K3L">
-                                <rect key="frame" x="50" y="91" width="275" height="127"/>
+                                <rect key="frame" x="69.666666666666686" y="115" width="275" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="2py-oS-rwf"/>
                                     <constraint firstAttribute="height" constant="127" id="oRa-KC-M4A"/>
@@ -150,6 +150,7 @@
                             <constraint firstItem="IjI-IR-lQB" firstAttribute="top" secondItem="C78-3u-K3L" secondAttribute="bottom" constant="202" id="vJ7-Es-ksm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FMJ-OK-WJb"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mAboutUsButton" destination="Bdv-kF-Smq" id="FhF-xH-ppD"/>
@@ -160,76 +161,117 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1017.3913043478261" y="26.116071428571427"/>
         </scene>
         <!--Parking Search View Controller-->
         <scene sceneID="kfZ-7w-D4Q">
             <objects>
-                <viewController id="3vn-h3-6cS" customClass="ParkingSearchViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="findParkingSpaceVC" id="3vn-h3-6cS" customClass="ParkingSearchViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pbi-3A-en5"/>
                         <viewControllerLayoutGuide type="bottom" id="4Yi-2o-crH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8lV-fH-M47">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-oN-kLF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Destination" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Y-v3-YmE" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="57" y="335" width="300" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Ae-85-2XZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="F3c-bw-jYM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Distance" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fL4-dQ-CwN" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="59" y="433" width="296" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOV-ZO-zrO" userLabel="BackButton">
-                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <rect key="frame" x="16" y="66" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6wq-De-3CY"/>
                                     <constraint firstAttribute="width" constant="40" id="gNa-w1-0dH"/>
                                 </constraints>
                                 <state key="normal" image="back"/>
                                 <connections>
-                                    <action selector="backButtonPressed:" destination="3vn-h3-6cS" eventType="touchUpInside" id="R3F-8f-L4r"/>
+                                    <action selector="backButtonPressed:" destination="3vn-h3-6cS" eventType="touchUpInside" id="j4D-2M-fus"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Parking Space" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cba-qj-8pL">
-                                <rect key="frame" x="59" y="42" width="257" height="88"/>
+                                <rect key="frame" x="59" y="66" width="296" height="88"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re9-zU-E42" userLabel="SearchButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="107" y="547" width="200" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="x5A-zx-btI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Search" backgroundImage="buttonimg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cba-qj-8pL" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="59" id="9RX-w8-frg"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5Y-v3-YmE" secondAttribute="trailing" constant="57" id="DCx-ou-a7k"/>
+                            <constraint firstItem="fL4-dQ-CwN" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="G4T-Rd-6O3"/>
+                            <constraint firstItem="re9-zU-E42" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="503" id="KgH-83-Khs"/>
                             <constraint firstItem="UOV-ZO-zrO" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="16" id="MeZ-JN-H2u"/>
+                            <constraint firstAttribute="trailing" secondItem="re9-zU-E42" secondAttribute="trailing" constant="107" id="RUn-YJ-iSI"/>
                             <constraint firstItem="cba-qj-8pL" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="WPs-iI-CzI"/>
+                            <constraint firstItem="Y5Y-v3-YmE" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="57" id="h31-Fu-gKV"/>
+                            <constraint firstAttribute="trailing" secondItem="fL4-dQ-CwN" secondAttribute="trailing" constant="59" id="hIx-xQ-ehA"/>
                             <constraint firstItem="cba-qj-8pL" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="22" id="hUn-wc-HSK"/>
+                            <constraint firstItem="re9-zU-E42" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="107" id="lgU-U9-DGd"/>
+                            <constraint firstItem="fL4-dQ-CwN" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="389" id="n2U-QZ-xCi"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="height" secondItem="8lV-fH-M47" secondAttribute="height" id="nBH-6b-4K8"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="bottom" secondItem="8lV-fH-M47" secondAttribute="bottom" id="oiF-Rj-coO"/>
+                            <constraint firstItem="re9-zU-E42" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="ooB-S7-siE"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="width" secondItem="8lV-fH-M47" secondAttribute="width" id="p9e-7A-dni"/>
+                            <constraint firstItem="re9-zU-E42" firstAttribute="width" secondItem="re9-zU-E42" secondAttribute="height" multiplier="108:31" constant="-9.0322580645161281" id="qzb-73-pLd"/>
+                            <constraint firstItem="fL4-dQ-CwN" firstAttribute="top" secondItem="Y5Y-v3-YmE" secondAttribute="bottom" constant="68" id="rNO-zJ-C4h"/>
                             <constraint firstItem="UOV-ZO-zrO" firstAttribute="top" secondItem="cba-qj-8pL" secondAttribute="top" id="rvJ-D8-i3i"/>
+                            <constraint firstItem="Y5Y-v3-YmE" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="291" id="sPK-Dh-qwO"/>
+                            <constraint firstItem="Y5Y-v3-YmE" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="w3C-g1-4Xt"/>
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" id="zEm-MH-Tpg"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xn-SN-eUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029.5999999999999" y="-676.01199400299856"/>
+            <point key="canvasLocation" x="1028.985507246377" y="-676.33928571428567"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="MqA-BD-tgU">
             <objects>
-                <viewController id="EY4-mr-NXd" customClass="AboutUsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutUsVC" id="EY4-mr-NXd" customClass="AboutUsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L6C-dp-Prk"/>
                         <viewControllerLayoutGuide type="bottom" id="ThC-Oj-APE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9MP-l5-gWm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-BD-opf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-yh-tsV">
-                                <rect key="frame" x="0.0" y="110" width="375" height="537"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="708"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Park it: parking light
 Our application will help you to find a parking lot very quickly by the following features: 
@@ -254,13 +296,13 @@ Park it, parking fast and parking light.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-El-0pA">
-                                <rect key="frame" x="102.5" y="42" width="170" height="44"/>
+                                <rect key="frame" x="122" y="66" width="170" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZY-gv-6qJ" userLabel="BackButton">
-                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <rect key="frame" x="16" y="66" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="LfE-ng-dxI"/>
                                     <constraint firstAttribute="height" constant="40" id="kc0-xs-ZzM"/>
@@ -298,26 +340,26 @@ Park it, parking fast and parking light.</string>
         <!--Find My Car View Confroller-->
         <scene sceneID="o33-MH-KTo">
             <objects>
-                <viewController id="f2Q-K2-pil" customClass="FindMyCarViewConfroller" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="findMyCarVC" id="f2Q-K2-pil" customClass="FindMyCarViewConfroller" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uwz-0v-R5C"/>
                         <viewControllerLayoutGuide type="bottom" id="clF-p1-Ur7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iWk-Bd-qSW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="Yor-ST-veM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find My Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iP-du-0RH">
-                                <rect key="frame" x="78" y="42" width="219" height="44"/>
+                                <rect key="frame" x="97.666666666666686" y="66" width="219" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-k7-rBH">
-                                <rect key="frame" x="16" y="107" width="207" height="114"/>
+                                <rect key="frame" x="16" y="131" width="207" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="G18-Qe-Dts"/>
                                     <constraint firstAttribute="width" secondItem="xiZ-k7-rBH" secondAttribute="height" multiplier="207:73" constant="-116.2602739726027" id="H64-ob-Ozm"/>
@@ -327,7 +369,7 @@ Park it, parking fast and parking light.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hs-XB-f0H" userLabel="SaveButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="245" y="107" width="108" height="31"/>
+                                <rect key="frame" x="284" y="131" width="108" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="4hO-WI-YfG"/>
                                     <constraint firstAttribute="width" secondItem="0hs-XB-f0H" secondAttribute="height" multiplier="108:31" id="Eue-jQ-84V"/>
@@ -342,7 +384,7 @@ Park it, parking fast and parking light.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78L-Lu-wnV" userLabel="FindButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="245" y="144" width="108" height="36"/>
+                                <rect key="frame" x="284" y="168" width="108" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Bho-9G-hBc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="UHp-ct-yMM"/>
@@ -357,7 +399,7 @@ Park it, parking fast and parking light.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-Wc-ytX" userLabel="ResetButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="245" y="185" width="108" height="36"/>
+                                <rect key="frame" x="284" y="209" width="108" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Nks-Wc-ytX" secondAttribute="height" multiplier="3:1" id="80j-Co-M5U"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="Op2-VF-guw"/>
@@ -372,11 +414,11 @@ Park it, parking fast and parking light.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2q-Va-dt8" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="229" width="375" height="438"/>
+                                <rect key="frame" x="0.0" y="253" width="414" height="643"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG2-tV-JnW" userLabel="dir2">
-                                <rect key="frame" x="327" y="607" width="40" height="40"/>
+                                <rect key="frame" x="366" y="802" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Kp2-se-8wV"/>
                                     <constraint firstAttribute="width" constant="40" id="t4C-Hr-N8M"/>
@@ -389,14 +431,14 @@ Park it, parking fast and parking light.</string>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-71-z0X" userLabel="dir1">
-                                <rect key="frame" x="279" y="607" width="40" height="40"/>
+                                <rect key="frame" x="318" y="802" width="40" height="40"/>
                                 <state key="normal" image="dir1"/>
                                 <connections>
                                     <action selector="navigateViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="75S-jl-047"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw5-yM-A33" userLabel="BackButton">
-                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <rect key="frame" x="16" y="66" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="pfV-FF-Wjm"/>
                                     <constraint firstAttribute="height" constant="40" id="qsO-jY-UMb"/>
@@ -454,57 +496,35 @@ Park it, parking fast and parking light.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi3-Ir-lfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029.5999999999999" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1939.1304347826087" y="26.116071428571427"/>
         </scene>
         <!--Parking Statistics View Controller-->
         <scene sceneID="l4A-3D-qgR">
             <objects>
-                <viewController id="3U8-PP-uQu" customClass="ParkingStatisticsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="statisticsVC" id="3U8-PP-uQu" customClass="ParkingStatisticsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="11B-LF-uOL"/>
                         <viewControllerLayoutGuide type="bottom" id="w5r-Dg-pF8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W6w-le-Ih8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="mve-Pq-f8U">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irw-eR-VNS" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="197" width="375" height="470"/>
+                                <rect key="frame" x="0.0" y="221" width="414" height="675"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa2-An-R7J" userLabel="dir2">
-                                <rect key="frame" x="327" y="607" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="ByR-Dg-oeH"/>
-                                    <constraint firstAttribute="height" constant="40" id="cGc-nf-Xx9"/>
-                                </constraints>
-                                <state key="normal" image="dir2">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="seeLocationViaGoogleMapsButtonClicked:" destination="3U8-PP-uQu" eventType="touchUpInside" id="7BF-vq-Tvx"/>
-                                    <action selector="seeLocationViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="Mog-8I-jvY"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-Kz-4ht" userLabel="dir1">
-                                <rect key="frame" x="279" y="607" width="40" height="40"/>
-                                <state key="normal" image="dir1"/>
-                                <connections>
-                                    <action selector="navigateViaGoogleMapsButtonClicked:" destination="3U8-PP-uQu" eventType="touchUpInside" id="eeT-2n-Pww"/>
-                                    <action selector="navigateViaGoogleMapsButtonClicked:" destination="f2Q-K2-pil" eventType="touchUpInside" id="yM9-GN-elH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDn-ih-HM9">
-                                <rect key="frame" x="101.5" y="42" width="172" height="44"/>
+                                <rect key="frame" x="121" y="66" width="172" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-GP-le6" userLabel="BackButton">
-                                <rect key="frame" x="16" y="42" width="40" height="40"/>
+                                <rect key="frame" x="16" y="66" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9tB-tG-yOJ"/>
                                     <constraint firstAttribute="width" constant="40" id="JKT-in-JpD"/>
@@ -515,7 +535,7 @@ Park it, parking fast and parking light.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LW-dZ-zKQ" userLabel="SearchButton" customClass="RoundButton" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="133.5" y="153" width="108" height="36"/>
+                                <rect key="frame" x="153" y="177" width="108" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Aga-F3-knF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="Wj6-yb-ap0"/>
@@ -529,11 +549,11 @@ Park it, parking fast and parking light.</string>
                                     <action selector="searchButtonClicked:" destination="3U8-PP-uQu" eventType="touchUpInside" id="Fna-sZ-KLe"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pick hour" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXk-54-m3Z" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="115" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please pick a street and hour" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXk-54-m3Z" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="139" width="414" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1b4-0r-KPa"/>
-                                    <constraint firstAttribute="width" constant="300" id="HYq-pb-sWh"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
@@ -552,28 +572,23 @@ Park it, parking fast and parking light.</string>
                             <constraint firstItem="Irw-eR-VNS" firstAttribute="top" secondItem="3LW-dZ-zKQ" secondAttribute="bottom" constant="8" id="Ifp-dv-o2r"/>
                             <constraint firstItem="FDn-ih-HM9" firstAttribute="centerX" secondItem="W6w-le-Ih8" secondAttribute="centerX" id="Ma5-Gg-hVo"/>
                             <constraint firstAttribute="bottom" secondItem="Irw-eR-VNS" secondAttribute="bottom" id="Nto-wL-i3Q"/>
-                            <constraint firstAttribute="trailing" secondItem="Aa2-An-R7J" secondAttribute="trailing" constant="8" id="PM6-PT-n4M"/>
-                            <constraint firstItem="w5r-Dg-pF8" firstAttribute="top" secondItem="Aa2-An-R7J" secondAttribute="bottom" constant="20" id="QGX-Bp-sQJ"/>
-                            <constraint firstItem="5ew-Kz-4ht" firstAttribute="top" secondItem="Aa2-An-R7J" secondAttribute="bottom" constant="-40" id="RQe-nK-PvU"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="width" secondItem="W6w-le-Ih8" secondAttribute="width" id="RYP-jQ-jA7"/>
                             <constraint firstItem="3LW-dZ-zKQ" firstAttribute="width" secondItem="3LW-dZ-zKQ" secondAttribute="height" multiplier="3:1" id="Rfw-S8-rKo"/>
                             <constraint firstItem="DXk-54-m3Z" firstAttribute="top" secondItem="FDn-ih-HM9" secondAttribute="bottom" constant="29" id="Vhl-FM-0XJ"/>
-                            <constraint firstItem="Aa2-An-R7J" firstAttribute="leading" secondItem="5ew-Kz-4ht" secondAttribute="trailing" constant="8" id="Xxh-Zj-xoX"/>
+                            <constraint firstItem="DXk-54-m3Z" firstAttribute="width" secondItem="W6w-le-Ih8" secondAttribute="width" id="Ztb-6p-Eox"/>
                             <constraint firstItem="DXk-54-m3Z" firstAttribute="centerX" secondItem="W6w-le-Ih8" secondAttribute="centerX" id="bM1-a2-OTY"/>
-                            <constraint firstItem="5ew-Kz-4ht" firstAttribute="width" secondItem="Aa2-An-R7J" secondAttribute="width" id="c0B-bR-gUS"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="leading" secondItem="W6w-le-Ih8" secondAttribute="leading" id="fMc-yh-dxL"/>
                             <constraint firstItem="3LW-dZ-zKQ" firstAttribute="width" secondItem="3LW-dZ-zKQ" secondAttribute="height" multiplier="3:1" id="hdj-sh-WY1"/>
-                            <constraint firstItem="w5r-Dg-pF8" firstAttribute="top" secondItem="5ew-Kz-4ht" secondAttribute="bottom" constant="20" id="hiY-Ac-VKn"/>
                             <constraint firstItem="rZV-GP-le6" firstAttribute="leading" secondItem="W6w-le-Ih8" secondAttribute="leading" constant="16" id="nDI-Mp-Nw3"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="bottom" secondItem="W6w-le-Ih8" secondAttribute="bottom" id="pA9-Ax-biu"/>
                             <constraint firstItem="mve-Pq-f8U" firstAttribute="height" secondItem="W6w-le-Ih8" secondAttribute="height" id="tSA-Db-gD9"/>
-                            <constraint firstItem="5ew-Kz-4ht" firstAttribute="height" secondItem="Aa2-An-R7J" secondAttribute="height" id="tVq-Zb-czO"/>
                             <constraint firstItem="Irw-eR-VNS" firstAttribute="top" secondItem="11B-LF-uOL" secondAttribute="bottom" constant="177" id="uBa-af-8la"/>
                             <constraint firstItem="rZV-GP-le6" firstAttribute="top" secondItem="FDn-ih-HM9" secondAttribute="top" id="y61-dh-yjy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mHourTextField" destination="DXk-54-m3Z" id="IRB-Gt-c5A"/>
+                        <outlet property="mMapView" destination="Irw-eR-VNS" id="9RH-H3-k5F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1W-AE-TsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -589,25 +604,116 @@ Park it, parking fast and parking light.</string>
                         <viewControllerLayoutGuide type="bottom" id="SOX-ep-diz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C2G-kd-fIj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="Op9-ga-OUK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-Ll-VnK" userLabel="BackButton">
+                                <rect key="frame" x="20" y="62" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HQO-Oy-bQd"/>
+                                    <constraint firstAttribute="width" constant="40" id="SoC-xI-rg8"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="3vn-h3-6cS" eventType="touchUpInside" id="WLP-O6-G3X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYL-Ij-Vhg">
+                                <rect key="frame" x="147.66666666666666" y="66" width="136.99999999999997" height="44"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E24-0k-M41" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="446" width="414" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttO-rC-cN1" userLabel="dir2">
+                                <rect key="frame" x="366" y="802" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="CSQ-IC-4z2"/>
+                                    <constraint firstAttribute="height" constant="40" id="XNo-2Y-PPR"/>
+                                </constraints>
+                                <state key="normal" image="dir2">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtP-NM-GMN" userLabel="dir1">
+                                <rect key="frame" x="318" y="802" width="40" height="40"/>
+                                <state key="normal" image="dir1"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-OO-rE0">
+                                <rect key="frame" x="0.0" y="118" width="414" height="331"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="26k-PA-BSi"/>
+                                </constraints>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="table" id="ODC-Mj-hyy" customClass="TableViewCell" customModule="ParkItIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ODC-Mj-hyy" id="KVY-O9-T0x">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7eJ-Ll-VnK" firstAttribute="top" secondItem="vlS-qS-Xgl" secondAttribute="bottom" constant="18" id="388-er-yZX"/>
                             <constraint firstItem="Op9-ga-OUK" firstAttribute="leading" secondItem="C2G-kd-fIj" secondAttribute="leading" id="9ac-eF-puu"/>
+                            <constraint firstItem="SOX-ep-diz" firstAttribute="top" secondItem="gtP-NM-GMN" secondAttribute="bottom" constant="20" id="BM5-9E-wc8"/>
                             <constraint firstItem="Op9-ga-OUK" firstAttribute="height" secondItem="C2G-kd-fIj" secondAttribute="height" id="LS4-Ne-rfv"/>
+                            <constraint firstItem="sZB-OO-rE0" firstAttribute="top" secondItem="zYL-Ij-Vhg" secondAttribute="bottom" constant="8" id="NQb-jY-YXn"/>
+                            <constraint firstItem="SOX-ep-diz" firstAttribute="top" secondItem="ttO-rC-cN1" secondAttribute="bottom" constant="20" id="NvG-MK-Dze"/>
+                            <constraint firstItem="E24-0k-M41" firstAttribute="centerX" secondItem="C2G-kd-fIj" secondAttribute="centerX" id="OTX-ZH-Zsg"/>
+                            <constraint firstItem="zYL-Ij-Vhg" firstAttribute="top" secondItem="vlS-qS-Xgl" secondAttribute="bottom" constant="22" id="R3q-Aj-kUI"/>
+                            <constraint firstItem="7eJ-Ll-VnK" firstAttribute="leading" secondItem="C2G-kd-fIj" secondAttribute="leading" constant="20" id="RUo-hA-jMz"/>
+                            <constraint firstAttribute="trailing" secondItem="ttO-rC-cN1" secondAttribute="trailing" constant="8" id="Vxu-Um-Wgz"/>
                             <constraint firstItem="Op9-ga-OUK" firstAttribute="width" secondItem="C2G-kd-fIj" secondAttribute="width" id="WO7-Mi-fZ5"/>
                             <constraint firstItem="Op9-ga-OUK" firstAttribute="bottom" secondItem="C2G-kd-fIj" secondAttribute="bottom" id="ZRm-Ig-frk"/>
+                            <constraint firstItem="gtP-NM-GMN" firstAttribute="width" secondItem="ttO-rC-cN1" secondAttribute="width" id="bT5-aW-xu0"/>
+                            <constraint firstItem="sZB-OO-rE0" firstAttribute="leading" secondItem="Op9-ga-OUK" secondAttribute="leading" id="do3-QC-80h"/>
+                            <constraint firstItem="SOX-ep-diz" firstAttribute="top" secondItem="E24-0k-M41" secondAttribute="bottom" constant="-34" id="hc3-GP-tlc"/>
+                            <constraint firstItem="E24-0k-M41" firstAttribute="top" secondItem="sZB-OO-rE0" secondAttribute="bottom" constant="-3" id="iWV-Jq-flK"/>
+                            <constraint firstItem="sZB-OO-rE0" firstAttribute="trailing" secondItem="Op9-ga-OUK" secondAttribute="trailing" id="mLT-Yr-66r"/>
+                            <constraint firstItem="E24-0k-M41" firstAttribute="width" secondItem="C2G-kd-fIj" secondAttribute="width" id="n4F-bv-PxB"/>
+                            <constraint firstItem="gtP-NM-GMN" firstAttribute="height" secondItem="ttO-rC-cN1" secondAttribute="height" id="sHs-tP-iD1"/>
+                            <constraint firstItem="zYL-Ij-Vhg" firstAttribute="centerX" secondItem="C2G-kd-fIj" secondAttribute="centerX" constant="9" id="vcu-YP-Mye"/>
+                            <constraint firstItem="ttO-rC-cN1" firstAttribute="leading" secondItem="gtP-NM-GMN" secondAttribute="trailing" constant="8" id="yHR-AR-acX"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQV-yB-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="-676"/>
+            <point key="canvasLocation" x="2047.826086956522" y="-676.33928571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u73-pM-IbY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbN-bN-Mvo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wUV-GO-3zV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="krn-PD-amc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qb6-3U-0VH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107.24637681159422" y="26.116071428571427"/>
         </scene>
     </scenes>
     <resources>

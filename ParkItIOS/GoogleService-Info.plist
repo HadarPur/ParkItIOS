@@ -2,39 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>823801766432-1q8d97ak9bhn08j06vck0hbk5152cr1d.apps.googleusercontent.com</string>
+	<string>896079309744-036r8e8n84plf56o6msvlo17ah4l21br.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.823801766432-1q8d97ak9bhn08j06vck0hbk5152cr1d</string>
+	<string>com.googleusercontent.apps.896079309744-036r8e8n84plf56o6msvlo17ah4l21br</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBGTg7HFzCBN12YZgR349FTMH3FiMAREmE</string>
+	<string>AIzaSyCcb9y4mutKqug7SBbwiCOMVnnjcVJ4BHM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>823801766432</string>
+	<string>896079309744</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Hadar.ParkItIOS</string>
+	<string>com.Hadar.ParkItIOS</string>
 	<key>PROJECT_ID</key>
-	<string>parkit-8b60d</string>
+	<string>parkitios</string>
 	<key>STORAGE_BUCKET</key>
-	<string>parkit-8b60d.appspot.com</string>
+	<string>parkitios.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
 	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:823801766432:ios:b1adf14a00aba1ce</string>
+	<string>1:896079309744:ios:148edc83c770c16f</string>
 	<key>DATABASE_URL</key>
-	<string>https://parkit-8b60d.firebaseio.com</string>
+	<string>https://parkitios.firebaseio.com</string>
 </dict>
 </plist>

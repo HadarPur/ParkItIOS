@@ -8,6 +8,7 @@
 
 import UIKit
 
+// take from https://blog.supereasyapps.com/how-to-create-round-buttons-using-ibdesignable-on-ios-11/
 @IBDesignable class RoundButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 15 {

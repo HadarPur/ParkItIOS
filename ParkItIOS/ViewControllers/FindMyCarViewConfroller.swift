@@ -13,11 +13,6 @@ import GoogleMaps
 
 class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     let mLocationManager = CLLocationManager()
-
-    struct defaultsKeys {
-        static let long = "longKey"
-        static let lat = "latKey"
-    }
     
     @IBOutlet weak var mMapView: GMSMapView!
     @IBOutlet weak var mLastLocationLabel: UILabel!
@@ -51,20 +46,11 @@ class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     }
     
     @IBAction func saveButtonClicked(_ sender: Any) {
-        let defaults = UserDefaults.standard
-        defaults.set(mCurrentLong, forKey: defaultsKeys.long)
-        defaults.set(mCurrentLat, forKey: defaultsKeys.lat)
+        CoreStorage().saveLocation(lat: mCurrentLat, long: mCurrentLong)
     }
     
     @IBAction func findButtonClicked(_ sender: Any) {
-        let defaults = UserDefaults.standard
-
-        if let long = defaults.string(forKey: defaultsKeys.long) {
-            mParkingLong = Double(long)!
-        }
-        if let lat = defaults.string(forKey: defaultsKeys.lat) {
-            mParkingLat = Double(lat)!
-        }
+        (mParkingLong, mParkingLat) = CoreStorage().getLocation()
         
         setLocationOnTheMap(latitudeUser: mParkingLat, longitudeUser: mParkingLong, titleUser: "Parking Location")
     }

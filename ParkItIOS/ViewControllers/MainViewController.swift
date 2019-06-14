@@ -10,8 +10,7 @@ import UIKit
 import CoreLocation
 
 class MainViewController: UIViewController {
-    let mFunctions = FuncUtils()
-    private let mFirebaseSingleton = FirebaseStorage()
+    private let mFirebaseSingleton = Firebase.shared
     
     let mLocationManager = CLLocationManager()
     
@@ -28,19 +27,19 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
-        self.mFunctions.showAlertActivityIndicator(viewController: self ,msg: "Please wait a sec...")
-        
-        self.mLocationManager.delegate = self
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
 
+        self.mLocationManager.delegate = self
+        FuncUtils().showAlertActivityIndicator(viewController: self ,msg: "Please wait a sec...")
         mFirebaseSingleton.readData {
-            self.mFunctions.hideAlertActivityIndicator(viewController: self)
+            FuncUtils().hideAlertActivityIndicator(viewController: self)
             self.mLocationManager.requestWhenInUseAuthorization()
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
         checkParameters()
         
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterForground(_:)), name: UIApplication.didBecomeActiveNotification, object: nil)
@@ -49,6 +48,76 @@ class MainViewController: UIViewController {
     @objc func applicationDidEnterForground(_ notification: Notification) {
         self.mLocationManager.requestWhenInUseAuthorization()
         checkParameters()
+    }
+    
+    @IBAction func findParkingSpaceButtonClicked(_ sender: UIButton) {
+        disableButtons()
+        sender.touch()
+        
+        let deadlineTime = DispatchTime.now() + .milliseconds(500)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let findParkingSpaceVC = storyBoard.instantiateViewController(withIdentifier: "findParkingSpaceVC") as? ParkingSearchViewController
+        
+        guard findParkingSpaceVC != nil else {
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
+            self.navigationController?.pushViewController(findParkingSpaceVC!, animated: true)
+        })
+        
+    }
+    
+    @IBAction func findMyCarButtonClicked(_ sender: UIButton) {
+        disableButtons()
+        sender.touch()
+        
+        let deadlineTime = DispatchTime.now() + .milliseconds(500)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let findMyCarVC = storyBoard.instantiateViewController(withIdentifier: "findMyCarVC") as? FindMyCarViewConfroller
+        
+        guard findMyCarVC != nil else {
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
+            self.navigationController?.pushViewController(findMyCarVC!, animated: true)
+        })
+        
+    }
+    
+    @IBAction func statisticsButtonClicked(_ sender: UIButton) {
+        disableButtons()
+        sender.touch()
+        
+        let deadlineTime = DispatchTime.now() + .milliseconds(500)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let statisticsVC = storyBoard.instantiateViewController(withIdentifier: "statisticsVC") as? ParkingStatisticsViewController
+        
+        guard statisticsVC != nil else {
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
+            self.navigationController?.pushViewController(statisticsVC!, animated: true)
+        })
+    }
+    
+    @IBAction func aboutUsButtonClicked(_ sender: UIButton) {
+        disableButtons()
+        sender.touch()
+        
+        let deadlineTime = DispatchTime.now() + .milliseconds(500)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let aboutUsVC = storyBoard.instantiateViewController(withIdentifier: "aboutUsVC") as? AboutUsViewController
+        
+        guard aboutUsVC != nil else {
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
+            self.navigationController?.pushViewController(aboutUsVC!, animated: true)
+        })
     }
     
     func checkParameters(){
@@ -100,23 +169,20 @@ class MainViewController: UIViewController {
     
 }
 
-// extension for map view
 extension MainViewController: CLLocationManagerDelegate {
-    
-    
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         
-        if mFirstAsk {
-            AlertsHandler.showAlertMessage(title: "Location needed", message: "Please allow location to play", cancelButtonTitle: "OK")
+        if mFirstAsk && status == .denied {
+            FuncUtils().showEventsAcessDeniedAlert(viewController: self)
         }
-        
-        self.mFirstAsk = false
         
         guard status == .authorizedWhenInUse else {
             disableButtons()
             return
         }
         
+        self.mFirstAsk = false
+
         self.mLocationManager.startUpdatingLocation()
         enableButtons()
     }

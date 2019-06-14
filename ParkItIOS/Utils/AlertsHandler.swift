@@ -11,13 +11,13 @@ import UIKit
 
 class AlertsHandler {
     
-    class func showAlertMessage(title: String?, message: String?, cancelButtonTitle: String) {
+    class func showAlertMessage(vc: UIViewController, title: String?, message: String?, cancelButtonTitle: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         
-        UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
+        vc.present(alert, animated: true, completion: nil)
         
     }
 }

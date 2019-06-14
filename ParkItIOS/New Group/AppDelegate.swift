@@ -12,7 +12,7 @@ import Firebase
 import GoogleMaps
 import GooglePlaces
 
-let googleApiKey = "AIzaSyAwNhgrUHg5YSpRk95hTBI1cE6BWqv8ljY"
+let googleApiKey = "AIzaSyC4vv7TIoTyDTYYCOdEUVbyKCKUVv6rRVs"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
