@@ -39,9 +39,7 @@ class ParkingResultsViewController: UIViewController, CallbackParkingData {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
         self.mTableView.isScrollEnabled = true
-
-        FuncUtils().showAlertActivityIndicator(viewController: self ,msg: "Please wait a sec...")
-
+        
         observerToSwipe()
         checkGPS()
     }
@@ -186,8 +184,6 @@ class ParkingResultsViewController: UIViewController, CallbackParkingData {
         }
         self.mTableView.endUpdates()
         print("Done reading streets\n")
-        
-        FuncUtils().hideAlertActivityIndicator(viewController: self)
     }
 }
 

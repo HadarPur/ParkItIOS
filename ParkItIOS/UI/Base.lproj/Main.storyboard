@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pLf-e5-v3N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ezi-DM-lgV">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="25"/>
+            <point key="canvasLocation" x="1939.1304347826087" y="24.776785714285712"/>
         </scene>
         <!--Parking Search View Controller-->
         <scene sceneID="kfZ-7w-D4Q">
@@ -504,7 +504,7 @@ Park it, parking fast and parking light.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi3-Ir-lfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2048" y="26"/>
+            <point key="canvasLocation" x="2957.971014492754" y="25.446428571428569"/>
         </scene>
         <!--Parking Statistics View Controller-->
         <scene sceneID="l4A-3D-qgR">
@@ -660,20 +660,20 @@ Park it, parking fast and parking light.</string>
                                     <action selector="navigateViaGoogleMapsButtonClicked:" destination="FiZ-0d-0YC" eventType="touchUpInside" id="yVa-T7-ESX"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-OO-rE0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-OO-rE0">
                                 <rect key="frame" x="0.0" y="118" width="414" height="331"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="331" id="26k-PA-BSi"/>
                                 </constraints>
-                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="table" rowHeight="70" id="ODC-Mj-hyy" customClass="TableViewCell" customModule="ParkItIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ODC-Mj-hyy" id="KVY-O9-T0x">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -721,22 +721,22 @@ Park it, parking fast and parking light.</string>
             <point key="canvasLocation" x="2047.826086956522" y="-676.33928571428567"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Qea-0D-ZyY">
+        <scene sceneID="TI4-IJ-LUM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pLf-e5-v3N" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X2z-R6-Ysd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vek-Io-cBM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BoT-9P-TSC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ezi-DM-lgV" kind="relationship" relationship="rootViewController" id="hMv-dB-xzU"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oJU-Lv-d9N"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xNv-Af-evK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7O-MW-YB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900.00000000000011" y="26.116071428571427"/>
+            <point key="canvasLocation" x="1028.985507246377" y="24.776785714285712"/>
         </scene>
     </scenes>
     <resources>

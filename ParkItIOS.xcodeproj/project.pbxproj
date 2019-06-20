@@ -17,6 +17,7 @@
 		3E575A8B22B78DFC00485E35 /* SecretConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E575A8A22B78DFC00485E35 /* SecretConstants.plist */; };
 		3E575A8D22BA647000485E35 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E575A8C22BA647000485E35 /* Street.swift */; };
 		3E575A9422BA8E8100485E35 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E575A9322BA8E8100485E35 /* TableViewCell.swift */; };
+		3E575A9622BB87AF00485E35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E575A9522BB87AF00485E35 /* GoogleService-Info.plist */; };
 		3E5DCFE0224B7EA9005E05DB /* FuncUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */; };
 		3E5DCFE2224B7ED0005E05DB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */; };
 		3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */; };
@@ -27,7 +28,6 @@
 		3E76B8862252352F0099FEF4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B8852252352F0099FEF4 /* TextField.swift */; };
 		3E76B88822527DBE0099FEF4 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76B88722527DBE0099FEF4 /* UIViewControllerExtention.swift */; };
 		3EA8F92A22B0E5E3003AF258 /* StreetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8F92922B0E5E3003AF258 /* StreetLocation.swift */; };
-		3EA8F93222B400CC003AF258 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8F93122B400CC003AF258 /* GoogleService-Info.plist */; };
 		3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C1224CDAD90058D419 /* Reachability.swift */; };
 		3EB3B4C4224CDC0A0058D419 /* ButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3B4C3224CDC0A0058D419 /* ButtonExtention.swift */; };
 		3EE0756C225509830092C9B1 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0756B225509830092C9B1 /* DateExtention.swift */; };
@@ -75,6 +75,7 @@
 		3E575A8A22B78DFC00485E35 /* SecretConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecretConstants.plist; sourceTree = "<group>"; };
 		3E575A8C22BA647000485E35 /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 		3E575A9322BA8E8100485E35 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3E575A9522BB87AF00485E35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ViewControllers/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncUtils.swift; sourceTree = "<group>"; };
 		3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsHandler.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		3E76B8852252352F0099FEF4 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3E76B88722527DBE0099FEF4 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		3EA8F92922B0E5E3003AF258 /* StreetLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetLocation.swift; sourceTree = "<group>"; };
-		3EA8F93122B400CC003AF258 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Users/hpur/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3EB3B4C1224CDAD90058D419 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		3EB3B4C3224CDC0A0058D419 /* ButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtention.swift; sourceTree = "<group>"; };
 		3EE0756B225509830092C9B1 /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
@@ -263,8 +263,8 @@
 				3E5DCFDE224B7E93005E05DB /* Utils */,
 				3E413E572248C818002BAA5D /* ViewControllers */,
 				3EFF856B22079C730020E0BC /* Info.plist */,
-				3EA8F93122B400CC003AF258 /* GoogleService-Info.plist */,
 				3EFF856322079C720020E0BC /* ParkItIOS.xcdatamodeld */,
+				3E575A9522BB87AF00485E35 /* GoogleService-Info.plist */,
 				3E575A8A22B78DFC00485E35 /* SecretConstants.plist */,
 			);
 			path = ParkItIOS;
@@ -421,8 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EFF856A22079C730020E0BC /* LaunchScreen.storyboard in Resources */,
-				3EA8F93222B400CC003AF258 /* GoogleService-Info.plist in Resources */,
 				3EFF856722079C730020E0BC /* Assets.xcassets in Resources */,
+				3E575A9622BB87AF00485E35 /* GoogleService-Info.plist in Resources */,
 				3EFF856222079C720020E0BC /* Main.storyboard in Resources */,
 				3E575A8B22B78DFC00485E35 /* SecretConstants.plist in Resources */,
 			);
@@ -764,7 +764,7 @@
 					"@executable_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hadar.ParkItIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.com.Hadar.ParkItIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -786,7 +786,7 @@
 					"@executable_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hadar.ParkItIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.com.Hadar.ParkItIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
