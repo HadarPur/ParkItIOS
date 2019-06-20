@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ezi-DM-lgV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pLf-e5-v3N">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,6 +40,7 @@
                             <constraint firstItem="2Iv-Hn-19r" firstAttribute="leading" secondItem="hhI-2n-8F7" secondAttribute="leading" id="se5-Jg-ixV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="urW-xr-Yr5"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mImageView" destination="fCd-iN-BBY" id="bOg-me-DVV"/>
@@ -47,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlE-Qi-5cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900" y="26.53673163418291"/>
+            <point key="canvasLocation" x="10.144927536231885" y="26.116071428571427"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -161,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017.3913043478261" y="26.116071428571427"/>
+            <point key="canvasLocation" x="1029" y="25"/>
         </scene>
         <!--Parking Search View Controller-->
         <scene sceneID="kfZ-7w-D4Q">
@@ -178,19 +179,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splashback" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-oN-kLF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Destination" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Y-v3-YmE" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="57" y="335" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please pick destination street" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Y-v3-YmE" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="335" width="414" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5Ae-85-2XZ"/>
-                                    <constraint firstAttribute="width" constant="300" id="F3c-bw-jYM"/>
+                                    <constraint firstAttribute="width" constant="414" id="F3c-bw-jYM"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Distance" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fL4-dQ-CwN" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
-                                <rect key="frame" x="59" y="433" width="296" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please pick max distance from the street" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fL4-dQ-CwN" customClass="TextField" customModule="ParkItIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="433" width="414" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
@@ -222,19 +223,22 @@
                                 <state key="normal" title="Search" backgroundImage="buttonimg">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="mSearchButtonClicked:" destination="3vn-h3-6cS" eventType="touchUpInside" id="9dK-FF-K1J"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cba-qj-8pL" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="59" id="9RX-w8-frg"/>
-                            <constraint firstAttribute="trailing" secondItem="Y5Y-v3-YmE" secondAttribute="trailing" constant="57" id="DCx-ou-a7k"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5Y-v3-YmE" secondAttribute="trailing" id="DCx-ou-a7k"/>
                             <constraint firstItem="fL4-dQ-CwN" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="G4T-Rd-6O3"/>
                             <constraint firstItem="re9-zU-E42" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="503" id="KgH-83-Khs"/>
                             <constraint firstItem="UOV-ZO-zrO" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="16" id="MeZ-JN-H2u"/>
                             <constraint firstAttribute="trailing" secondItem="re9-zU-E42" secondAttribute="trailing" constant="107" id="RUn-YJ-iSI"/>
                             <constraint firstItem="cba-qj-8pL" firstAttribute="centerX" secondItem="8lV-fH-M47" secondAttribute="centerX" id="WPs-iI-CzI"/>
-                            <constraint firstItem="Y5Y-v3-YmE" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="57" id="h31-Fu-gKV"/>
-                            <constraint firstAttribute="trailing" secondItem="fL4-dQ-CwN" secondAttribute="trailing" constant="59" id="hIx-xQ-ehA"/>
+                            <constraint firstItem="Y5Y-v3-YmE" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" id="h31-Fu-gKV"/>
+                            <constraint firstAttribute="trailing" secondItem="fL4-dQ-CwN" secondAttribute="trailing" id="hIx-xQ-ehA"/>
                             <constraint firstItem="cba-qj-8pL" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="22" id="hUn-wc-HSK"/>
                             <constraint firstItem="re9-zU-E42" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" constant="107" id="lgU-U9-DGd"/>
                             <constraint firstItem="fL4-dQ-CwN" firstAttribute="top" secondItem="pbi-3A-en5" secondAttribute="bottom" constant="389" id="n2U-QZ-xCi"/>
@@ -250,6 +254,10 @@
                             <constraint firstItem="NLM-oN-kLF" firstAttribute="leading" secondItem="8lV-fH-M47" secondAttribute="leading" id="zEm-MH-Tpg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mDestTextField" destination="Y5Y-v3-YmE" id="EZr-ON-EnE"/>
+                        <outlet property="mDistanceTextField" destination="fL4-dQ-CwN" id="OWg-Ym-dOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xn-SN-eUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,7 +343,7 @@ Park it, parking fast and parking light.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X8C-YO-bnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="795.6521739130435"/>
+            <point key="canvasLocation" x="1029" y="796"/>
         </scene>
         <!--Find My Car View Confroller-->
         <scene sceneID="o33-MH-KTo">
@@ -496,7 +504,7 @@ Park it, parking fast and parking light.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi3-Ir-lfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939.1304347826087" y="26.116071428571427"/>
+            <point key="canvasLocation" x="2048" y="26"/>
         </scene>
         <!--Parking Statistics View Controller-->
         <scene sceneID="l4A-3D-qgR">
@@ -593,12 +601,12 @@ Park it, parking fast and parking light.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1W-AE-TsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029.5999999999999" y="795.6521739130435"/>
+            <point key="canvasLocation" x="2048" y="796"/>
         </scene>
         <!--Parking Results View Controller-->
         <scene sceneID="4rz-vn-Rxs">
             <objects>
-                <viewController id="FiZ-0d-0YC" customClass="ParkingResultsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParkingResultsViewController" id="FiZ-0d-0YC" customClass="ParkingResultsViewController" customModule="ParkItIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vlS-qS-Xgl"/>
                         <viewControllerLayoutGuide type="bottom" id="SOX-ep-diz"/>
@@ -619,6 +627,7 @@ Park it, parking fast and parking light.</string>
                                 <state key="normal" image="back"/>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="3vn-h3-6cS" eventType="touchUpInside" id="WLP-O6-G3X"/>
+                                    <action selector="backButtonPressed:" destination="FiZ-0d-0YC" eventType="touchUpInside" id="ruk-hL-TXU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYL-Ij-Vhg">
@@ -628,7 +637,7 @@ Park it, parking fast and parking light.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E24-0k-M41" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="446" width="414" height="450"/>
+                                <rect key="frame" x="0.0" y="449" width="414" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttO-rC-cN1" userLabel="dir2">
@@ -640,10 +649,16 @@ Park it, parking fast and parking light.</string>
                                 <state key="normal" image="dir2">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="seeLocationViaGoogleMapsButtonClicked:" destination="FiZ-0d-0YC" eventType="touchUpInside" id="QW6-Up-9ao"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtP-NM-GMN" userLabel="dir1">
                                 <rect key="frame" x="318" y="802" width="40" height="40"/>
                                 <state key="normal" image="dir1"/>
+                                <connections>
+                                    <action selector="navigateViaGoogleMapsButtonClicked:" destination="FiZ-0d-0YC" eventType="touchUpInside" id="yVa-T7-ESX"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-OO-rE0">
                                 <rect key="frame" x="0.0" y="118" width="414" height="331"/>
@@ -654,17 +669,21 @@ Park it, parking fast and parking light.</string>
                                 </constraints>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="table" id="ODC-Mj-hyy" customClass="TableViewCell" customModule="ParkItIOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="table" rowHeight="70" id="ODC-Mj-hyy" customClass="TableViewCell" customModule="ParkItIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ODC-Mj-hyy" id="KVY-O9-T0x">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FiZ-0d-0YC" id="84H-oq-c69"/>
+                                    <outlet property="delegate" destination="FiZ-0d-0YC" id="9eF-J6-MMW"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -684,7 +703,7 @@ Park it, parking fast and parking light.</string>
                             <constraint firstItem="gtP-NM-GMN" firstAttribute="width" secondItem="ttO-rC-cN1" secondAttribute="width" id="bT5-aW-xu0"/>
                             <constraint firstItem="sZB-OO-rE0" firstAttribute="leading" secondItem="Op9-ga-OUK" secondAttribute="leading" id="do3-QC-80h"/>
                             <constraint firstItem="SOX-ep-diz" firstAttribute="top" secondItem="E24-0k-M41" secondAttribute="bottom" constant="-34" id="hc3-GP-tlc"/>
-                            <constraint firstItem="E24-0k-M41" firstAttribute="top" secondItem="sZB-OO-rE0" secondAttribute="bottom" constant="-3" id="iWV-Jq-flK"/>
+                            <constraint firstItem="E24-0k-M41" firstAttribute="top" secondItem="sZB-OO-rE0" secondAttribute="bottom" id="iWV-Jq-flK"/>
                             <constraint firstItem="sZB-OO-rE0" firstAttribute="trailing" secondItem="Op9-ga-OUK" secondAttribute="trailing" id="mLT-Yr-66r"/>
                             <constraint firstItem="E24-0k-M41" firstAttribute="width" secondItem="C2G-kd-fIj" secondAttribute="width" id="n4F-bv-PxB"/>
                             <constraint firstItem="gtP-NM-GMN" firstAttribute="height" secondItem="ttO-rC-cN1" secondAttribute="height" id="sHs-tP-iD1"/>
@@ -692,28 +711,32 @@ Park it, parking fast and parking light.</string>
                             <constraint firstItem="ttO-rC-cN1" firstAttribute="leading" secondItem="gtP-NM-GMN" secondAttribute="trailing" constant="8" id="yHR-AR-acX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mMapView" destination="E24-0k-M41" id="OBM-Bg-lhr"/>
+                        <outlet property="mTableView" destination="sZB-OO-rE0" id="Aso-Wi-qhN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQV-yB-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2047.826086956522" y="-676.33928571428567"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="u73-pM-IbY">
+        <scene sceneID="Qea-0D-ZyY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbN-bN-Mvo" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pLf-e5-v3N" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wUV-GO-3zV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vek-Io-cBM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="krn-PD-amc"/>
+                        <segue destination="Ezi-DM-lgV" kind="relationship" relationship="rootViewController" id="hMv-dB-xzU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qb6-3U-0VH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNv-Af-evK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="107.24637681159422" y="26.116071428571427"/>
+            <point key="canvasLocation" x="-900.00000000000011" y="26.116071428571427"/>
         </scene>
     </scenes>
     <resources>

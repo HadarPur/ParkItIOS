@@ -12,23 +12,36 @@ import Firebase
 import GoogleMaps
 import GooglePlaces
 
-let googleApiKey = "AIzaSyC4vv7TIoTyDTYYCOdEUVbyKCKUVv6rRVs"
+//let googleApiKey = "AIzaSyC4vv7TIoTyDTYYCOdEUVbyKCKUVv6rRVs"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GMSServices.provideAPIKey(googleApiKey)
-        GMSPlacesClient.provideAPIKey(googleApiKey)
-
+        setGoogleKeys()
         FirebaseApp.configure()
         return true
     }
 
+    func setGoogleKeys() {
+        //get the path of the plist file
+        guard let plistPath = Bundle.main.path(forResource: "SecretConstants", ofType: "plist") else { return }
+        //load the plist as data in memory
+        guard let plistData = FileManager.default.contents(atPath: plistPath) else { return }
+        //use the format of a property list (xml)
+        var format = PropertyListSerialization.PropertyListFormat.xml
+        //convert the plist data to a Swift Dictionary
+        guard let  plistDict = try! PropertyListSerialization.propertyList(from: plistData, options: .mutableContainersAndLeaves, format: &format) as? [String : AnyObject] else { return }
+        //access the values in the dictionary
+        if let googleApiKey = plistDict["GoogleMapsMobileSdkApiKey"] as? String {
+            GMSServices.provideAPIKey(googleApiKey)
+            GMSPlacesClient.provideAPIKey(googleApiKey)
+        }
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

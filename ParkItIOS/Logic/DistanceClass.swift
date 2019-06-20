@@ -13,32 +13,29 @@ import GoogleMaps
 
 class DistanceClass {
     
-    var mStreetsOld = Array<FirebaseData.Street>()
-    var mStreetsNew = Array<FirebaseData.Street>()
-    var mNumOfThreads: Int!
+    var mStreetsOld = Array<Street>()
+    var mStreetsNew = Array<Street>()
     var mRadius: Double!
     var mDestLocLat: Double!
     var mDestLocLng: Double!
     var mEnter: Bool!
     var mCounter: Int!
 
-    func initDistanceClass(streetsOld: Array<FirebaseData.Street>, numOfThreads: Int, destLocLat: Double, destLocLng: Double) {
-        mNumOfThreads = numOfThreads
+    func initDistanceClass(streetsOld: Array<Street>, destLocLat: Double, destLocLng: Double) {
         mStreetsOld.append(contentsOf: streetsOld)
         mDestLocLat = destLocLat
         mDestLocLng = destLocLng
         mRadius = 500
     }
 
-    func initDistanceClass(streetsOld: Array<FirebaseData.Street>, numOfThreads: Int, destLocLat: Double, destLocLng: Double, radius: Double) {
-        mNumOfThreads = numOfThreads
+    func initDistanceClass(streetsOld: Array<Street>, destLocLat: Double, destLocLng: Double, radius: Double) {
         mStreetsOld.append(contentsOf: streetsOld)
         mDestLocLat = destLocLat
         mDestLocLng = destLocLng
         mRadius = radius
     }
     
-    func calculate(cuttrntThread: Int, completion: @escaping (_ newStreets: Array<FirebaseData.Street>)-> Void) {
+    func calculate(completion: @escaping (_ newStreets: Array<Street>)-> Void) {
         let destLocLat = mDestLocLat!
         let destLocLng = mDestLocLng!
 
@@ -54,11 +51,8 @@ class DistanceClass {
             let radius: Double = Double(self.mRadius)
             
             let walkDist: Double = StreetLocation().calcWalkingDistance(lat1: destLocLat, lon1: destLocLng, lat2: streetLocLat, lon2: streetLocLng)
-            
-            print("walkDist == \(walkDist) mRadius == \(radius) numOfCars == \(numOfCars) numOfSensors ==\(numOfSensors)")
-            
+
             if (walkDist <= radius) && (numOfCars < numOfSensors) {
-                print("add one more")
                 self.mStreetsNew.append(street)
             }
         }

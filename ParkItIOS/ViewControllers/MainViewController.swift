@@ -30,11 +30,8 @@ class MainViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
 
         self.mLocationManager.delegate = self
-        FuncUtils().showAlertActivityIndicator(viewController: self ,msg: "Please wait a sec...")
-        mFirebaseSingleton.readData {
-            FuncUtils().hideAlertActivityIndicator(viewController: self)
-            self.mLocationManager.requestWhenInUseAuthorization()
-        }
+        self.mLocationManager.requestWhenInUseAuthorization()
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -181,10 +178,15 @@ extension MainViewController: CLLocationManagerDelegate {
             return
         }
         
+        FuncUtils().showAlertActivityIndicator(viewController: self ,msg: "Please wait a sec...")
+        mFirebaseSingleton.readData {
+            FuncUtils().hideAlertActivityIndicator(viewController: self)
+        }
+        
         self.mFirstAsk = false
-
         self.mLocationManager.startUpdatingLocation()
         enableButtons()
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

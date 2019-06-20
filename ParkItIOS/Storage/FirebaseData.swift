@@ -12,15 +12,6 @@ import UIKit
 
 class FirebaseData {
     
-    struct Street: Decodable {
-        var cars: String!
-        var lat: String!
-        var lng: String!
-        var rate: String!
-        var sensors: String!
-        var street: String!
-    }
-    
     let NUM_OF_HOURS : Int = 3
 
     var mHoursOfTheDay = ["morning","night","noon"]
@@ -31,7 +22,7 @@ class FirebaseData {
 
     public func cofig(callback: @escaping () -> ()) {
         let numOfDay = Date().dayNumberOfWeek()
-        print("numOfDay = \(String(describing: numOfDay))")
+        print("numOfDay = \(numOfDay ?? 0)")
         
         switch numOfDay {
         case 7: // saturday
@@ -45,7 +36,7 @@ class FirebaseData {
             break
         }
         
-        print("mDayOfWeek = \(String(describing: mDayOfWeek))")
+        print("mDayOfWeek = \(mDayOfWeek ?? "")")
         
         self.mRef = Database.database().reference(withPath: mDayOfWeek)
         self.mRef.observeSingleEvent(of: .value, with: { (snapshot) in
@@ -60,7 +51,6 @@ class FirebaseData {
                         let streetItem = try JSONDecoder().decode(Street.self, from: jsonData)
                         
                         array.append(streetItem)
-                        print(streetItem)
                     } catch let error {
                         print(error)
                     }

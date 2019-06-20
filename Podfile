@@ -13,7 +13,8 @@ target 'ParkItIOS' do
     pod 'Firebase/Auth'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
-
+	pod 'NVActivityIndicatorView'
+	
   target 'ParkItIOSTests' do
     inherit! :search_paths
     # Pods for testing

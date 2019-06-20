@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import NVActivityIndicatorView
 
 class FuncUtils: NSObject {
     var mLoadingAlertController : UIAlertController! = nil
@@ -37,8 +38,10 @@ class FuncUtils: NSObject {
     }
     
     public func showAlertActivityIndicator(viewController: UIViewController, msg: String) {
+
         mLoadingAlertController = UIAlertController(title: msg, message: nil, preferredStyle: .alert)
-        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        let activityIndicator = NVActivityIndicatorView(frame: CGRect(x: 80,y: 60, width: 30, height: 30), type: .ballRotateChase, color: .gray, padding: nil)
+
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         mLoadingAlertController.view.addSubview(activityIndicator)
         let xConstraint = NSLayoutConstraint(item: activityIndicator, attribute: .centerX, relatedBy: .equal, toItem: mLoadingAlertController.view, attribute: .centerX, multiplier: 1, constant: 0)
@@ -46,7 +49,7 @@ class FuncUtils: NSObject {
         NSLayoutConstraint.activate([ xConstraint, yConstraint])
         activityIndicator.isUserInteractionEnabled = false
         activityIndicator.startAnimating()
-        let height: NSLayoutConstraint = NSLayoutConstraint(item: mLoadingAlertController.view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 80)
+        let height: NSLayoutConstraint = NSLayoutConstraint(item: mLoadingAlertController.view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 90)
         mLoadingAlertController.view.addConstraint(height);
         viewController.present(self.mLoadingAlertController, animated: true, completion: nil)
     }

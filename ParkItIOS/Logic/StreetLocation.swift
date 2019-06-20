@@ -13,16 +13,36 @@ import GoogleMaps
 
 class StreetLocation {
     
-    func findStreetLocation(address: String, completion: @escaping (_ location: CLLocation?)-> Void) {
+    func findLocationByAddress(address: String, completion: @escaping (_ location: CLLocation?)-> Void) {
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(address) { (placemarks, error) in
             guard let placemarks = placemarks, let location = placemarks.first?.location else {
-                print("address: \(address)")
-                print("location Error: \(error?.localizedDescription ?? "")")
+                print("findLocationByAddress Error: \(error?.localizedDescription ?? "")")
                 return
             }
             completion(location)
         }
+    }
+    
+    func findAddressByLocation(location: CLLocation, completion: @escaping (_ address: String?)-> Void) {
+        let geocoder = CLGeocoder()
+        
+        geocoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
+            guard let placemark = placemarks?[0] else {
+                print("findAddressByLocation Error: \(error?.localizedDescription ?? "")")
+                return
+            }
+            
+            var address: String = ""
+            
+            // Location name
+            if let locationName = placemark.name, let locLocality = placemark.locality  {
+                address = locationName + ", " + locLocality
+            }
+            
+            // Passing address back
+            completion(address)
+        })
     }
     
     func deg2rad(deg:Double) -> Double {

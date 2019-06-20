@@ -14,6 +14,9 @@
 		3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E532248C7B2002BAA5D /* ParkingResultsViewController.swift */; };
 		3E413E562248C7F6002BAA5D /* ParkingStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E552248C7F6002BAA5D /* ParkingStatisticsViewController.swift */; };
 		3E413E592248C86F002BAA5D /* FindMyCarViewConfroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E413E582248C86F002BAA5D /* FindMyCarViewConfroller.swift */; };
+		3E575A8B22B78DFC00485E35 /* SecretConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E575A8A22B78DFC00485E35 /* SecretConstants.plist */; };
+		3E575A8D22BA647000485E35 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E575A8C22BA647000485E35 /* Street.swift */; };
+		3E575A9422BA8E8100485E35 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E575A9322BA8E8100485E35 /* TableViewCell.swift */; };
 		3E5DCFE0224B7EA9005E05DB /* FuncUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */; };
 		3E5DCFE2224B7ED0005E05DB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */; };
 		3E5DCFE4224B7EF1005E05DB /* AlertsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */; };
@@ -69,6 +72,9 @@
 		3E413E532248C7B2002BAA5D /* ParkingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingResultsViewController.swift; sourceTree = "<group>"; };
 		3E413E552248C7F6002BAA5D /* ParkingStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingStatisticsViewController.swift; sourceTree = "<group>"; };
 		3E413E582248C86F002BAA5D /* FindMyCarViewConfroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCarViewConfroller.swift; sourceTree = "<group>"; };
+		3E575A8A22B78DFC00485E35 /* SecretConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecretConstants.plist; sourceTree = "<group>"; };
+		3E575A8C22BA647000485E35 /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		3E575A9322BA8E8100485E35 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3E5DCFDF224B7EA9005E05DB /* FuncUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncUtils.swift; sourceTree = "<group>"; };
 		3E5DCFE1224B7ED0005E05DB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		3E5DCFE3224B7EF1005E05DB /* AlertsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsHandler.swift; sourceTree = "<group>"; };
@@ -151,6 +157,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		3E575A9222BA8E5200485E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E575A9322BA8E8100485E35 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3E5DCFDE224B7E93005E05DB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +193,7 @@
 				3E5DCFEE224BC5A1005E05DB /* CalaDistance.swift */,
 				3E07CF4122AFCE5D001EB885 /* DistanceClass.swift */,
 				3EA8F92922B0E5E3003AF258 /* StreetLocation.swift */,
+				3E575A8C22BA647000485E35 /* Street.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -239,6 +254,7 @@
 		3EFF855B22079C720020E0BC /* ParkItIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3E575A9222BA8E5200485E35 /* View */,
 				3EE0756D22550A670092C9B1 /* Storage */,
 				3E76B889225281000099FEF4 /* Extentions */,
 				3E5DCFED224BC238005E05DB /* UI */,
@@ -249,6 +265,7 @@
 				3EFF856B22079C730020E0BC /* Info.plist */,
 				3EA8F93122B400CC003AF258 /* GoogleService-Info.plist */,
 				3EFF856322079C720020E0BC /* ParkItIOS.xcdatamodeld */,
+				3E575A8A22B78DFC00485E35 /* SecretConstants.plist */,
 			);
 			path = ParkItIOS;
 			sourceTree = "<group>";
@@ -407,6 +424,7 @@
 				3EA8F93222B400CC003AF258 /* GoogleService-Info.plist in Resources */,
 				3EFF856722079C730020E0BC /* Assets.xcassets in Resources */,
 				3EFF856222079C720020E0BC /* Main.storyboard in Resources */,
+				3E575A8B22B78DFC00485E35 /* SecretConstants.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +492,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ParkItIOS/Pods-ParkItIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -481,6 +500,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -532,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E575A8D22BA647000485E35 /* Street.swift in Sources */,
 				3E5DCFF1224BCA2A005E05DB /* RoundButton.swift in Sources */,
 				3E76B88222514C980099FEF4 /* GoogleMapsUtils.swift in Sources */,
 				3E413E522248C760002BAA5D /* ParkingSearchViewController.swift in Sources */,
@@ -543,6 +564,7 @@
 				3EB3B4C2224CDAD90058D419 /* Reachability.swift in Sources */,
 				3EFF855D22079C720020E0BC /* AppDelegate.swift in Sources */,
 				3EE0756F22550A7D0092C9B1 /* FirebaseData.swift in Sources */,
+				3E575A9422BA8E8100485E35 /* TableViewCell.swift in Sources */,
 				3E76B88822527DBE0099FEF4 /* UIViewControllerExtention.swift in Sources */,
 				3E413E542248C7B2002BAA5D /* ParkingResultsViewController.swift in Sources */,
 				3E76B8862252352F0099FEF4 /* TextField.swift in Sources */,

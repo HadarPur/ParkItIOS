@@ -14,12 +14,12 @@ public class Firebase {
     let fbData = FirebaseData()
     
     //return streets on specific time
-    func getStreets(index: Int) -> Array<FirebaseData.Street> {
+    func getStreets(index: Int) -> Array<Street> {
         return fbData.getCloudDataArray(index: index)
     }
     
     //gets all data
-    func getData() -> Array<Array<FirebaseData.Street>> {
+    func getData() -> Array<Array<Street>> {
         return fbData.getCloudDataAllArrays()
     }
     
