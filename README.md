@@ -12,5 +12,5 @@ Park it, parking fast and parking light.
 
 ## App design:
 
-<img src="https://github.com/HadarPur/MinesweeperIOS/blob/master/Wireframe.png" />
-<img src="https://github.com/HadarPur/MinesweeperIOS/blob/master/SeqDiagram.png" />
+<img src="https://github.com/HadarPur/ParkItIOS/blob/master/Wireframe.png" />
+<img src="https://github.com/HadarPur/ParkItIOS/blob/master/SeqDiagram.png" />
