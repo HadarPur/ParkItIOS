@@ -9,3 +9,8 @@ You can also view daily on streets parking statistics: On the main page click on
 Forgot when you parked your car? With "find my car screen" You can save your last parking location with the button "save" and search for your last parking location with the button "search" , The button reset will show you your current location.
 
 Park it, parking fast and parking light.
+
+## App design:
+
+<img src="https://github.com/HadarPur/MinesweeperIOS/blob/master/Wireframe.png" />
+<img src="https://github.com/HadarPur/MinesweeperIOS/blob/master/SeqDiagram.png" />
