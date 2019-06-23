@@ -15,6 +15,7 @@ class DistanceClass {
     
     var mStreetsOld = Array<Street>()
     var mStreetsNew = Array<Street>()
+    
     var mRadius: Double!
     var mDestLocLat: Double!
     var mDestLocLng: Double!

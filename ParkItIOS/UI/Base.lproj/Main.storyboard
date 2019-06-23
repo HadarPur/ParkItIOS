@@ -281,7 +281,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-yh-tsV">
                                 <rect key="frame" x="0.0" y="134" width="414" height="708"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Park it: parking light
+                                <mutableString key="text">Park it: parking light
 Our application will help you to find a parking lot very quickly by the following features: 
 
 Find parking space: no more spending time on finding parking space! 
@@ -290,16 +290,16 @@ While pressing the button "find parking space" in the main page you can enter li
 You can also view daily on streets parking statistics: 
 On the main page click on the button "statistics" it will leads you to statistics screen. You can enter your destination street and arrival time hour, the map will show you the occupancy parking rate of the streets near your destination and their location. The streets will be shown on the map by markers with different colors. 
                 
-Blue marker: empty, streets with occupancy rate between 0%-25% 
+Cyan marker: empty, streets with occupancy rate between 0%-25% 
 Green marker: available, streets with occupancy rate between 25% to 50% 
 Orange marker : occupied, occupancy rate between 50%-75%
-Purple marker: full, occupancy rate between 75%-100%
+Blue marker: full, occupancy rate between 75%-100%
                 
 Forgot when you parked your car?
 With "find my car screen" you can save your last parking location with the button "save" and search for your last parking location with the button "search" .
 The button reset will show you your current location.
                 
-Park it, parking fast and parking light.</string>
+Park it, parking fast and parking light.</mutableString>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

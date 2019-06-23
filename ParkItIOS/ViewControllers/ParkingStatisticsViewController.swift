@@ -16,27 +16,25 @@ protocol CallbackStatisticsData {
 }
 
 class ParkingStatisticsViewController: UIViewController, CallbackStatisticsData {
-    
-    @IBOutlet weak var mHourTextField: UITextField!
-    @IBOutlet weak var mMapView: GMSMapView!
-
     private let mFirebaseSingleton = Firebase.shared
     let mLocationManager = CLLocationManager()
-
-    var mData = Array<Array<String>>()
-    var mHoursData = ["07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]
+    let mHoursData = ["07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]
     
     var mStreetData = Array<String>()
     var mStreets = Array<Array<Street>>()
+    var mData = Array<Array<String>>()
 
     var mCurrentLat = 0.0
     var mCurrentLong = 0.0
     
     var mPickerView : UIPickerView!
-    var mChosenHourPos: Int!
     var mChosenStreet: String!
     var mChosenStreetPos: Int!
-    
+    var mChosenHourPos: Int!
+
+    @IBOutlet weak var mHourTextField: UITextField!
+    @IBOutlet weak var mMapView: GMSMapView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true

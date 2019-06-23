@@ -11,19 +11,19 @@ import UIKit
 
 class ParkingSearchViewController: UIViewController {
     private let mFirebaseSingleton = Firebase.shared
-
-    @IBOutlet weak var mDestTextField: TextField!
-    @IBOutlet weak var mDistanceTextField: TextField!
     let mDistData = ["500 m", "1000 m", "1500 m", "2000 m"]
     
     var mPickerView : UIPickerView!
-
+    
     var mStreetData = Array<String>()
     var mStreets = Array<Array<Street>>()
     
     var mDest: String!
     var mDist: Int!
     var mDestPos: Int!
+    
+    @IBOutlet weak var mDestTextField: TextField!
+    @IBOutlet weak var mDistanceTextField: TextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()

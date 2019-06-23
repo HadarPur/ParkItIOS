@@ -15,20 +15,21 @@ protocol CallbackParkingData {
 }
 
 class ParkingResultsViewController: UIViewController, CallbackParkingData {
-    
     private let mFirebaseSingleton = Firebase.shared
     let mLocationManager = CLLocationManager()
 
     var mDist: Double!
-    var mDestinationName: String!
-    var mDestinationStreet: Street!
     var mCurrentLat: Double!
     var mCurrentLong: Double!
     var mParkingLat: Double!
     var mParkingLong: Double!
+    
     var mCurrentTitle: String!
     var mCurrentAddress: String!
-
+    var mDestinationName: String!
+    
+    var mDestinationStreet: Street!
+    
     var mStreetsData = Array<Street>()
     var mStreets = Array<String>()
     

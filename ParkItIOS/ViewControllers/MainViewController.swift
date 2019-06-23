@@ -11,7 +11,6 @@ import CoreLocation
 
 class MainViewController: UIViewController {
     private let mFirebaseSingleton = Firebase.shared
-    
     let mLocationManager = CLLocationManager()
     
     var mCurrentLat: Double = 0
@@ -31,7 +30,6 @@ class MainViewController: UIViewController {
 
         self.mLocationManager.delegate = self
         self.mLocationManager.requestWhenInUseAuthorization()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -144,7 +142,6 @@ class MainViewController: UIViewController {
         super.viewWillDisappear(animated)
 
         NotificationCenter.default.removeObserver(self)
-
     }
     
     func disableButtons() {

@@ -13,12 +13,13 @@ import UIKit
 class FirebaseData {
     
     let NUM_OF_HOURS : Int = 3
-
-    var mHoursOfTheDay = ["morning","night","noon"]
+    let mHoursOfTheDay = ["morning","night","noon"]
+    
     var cloudData: Array<Array<Street>> = Array()
+    var mDatabaseReferenceArray : Array<DatabaseReference> = Array()
+
     var mDayOfWeek: String!
     var mRef : DatabaseReference!
-    var mDatabaseReferenceArray : Array<DatabaseReference> = Array()
 
     public func cofig(callback: @escaping () -> ()) {
         let numOfDay = Date().dayNumberOfWeek()

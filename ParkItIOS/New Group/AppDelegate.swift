@@ -12,8 +12,6 @@ import Firebase
 import GoogleMaps
 import GooglePlaces
 
-//let googleApiKey = "AIzaSyC4vv7TIoTyDTYYCOdEUVbyKCKUVv6rRVs"
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

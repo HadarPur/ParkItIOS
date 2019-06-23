@@ -9,7 +9,7 @@
 import UIKit
 
 class TextField: UITextField {
-    // 8
+
     override func caretRect(for position: UITextPosition) -> CGRect {
         return CGRect.zero
     }

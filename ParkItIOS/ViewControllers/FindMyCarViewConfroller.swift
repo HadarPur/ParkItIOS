@@ -14,14 +14,14 @@ import GoogleMaps
 class FindMyCarViewConfroller: UIViewController , CLLocationManagerDelegate{
     let mLocationManager = CLLocationManager()
     
-    @IBOutlet weak var mMapView: GMSMapView!
-    @IBOutlet weak var mLastLocationLabel: UILabel!
-    
     var mParkingLat = 0.0
     var mParkingLong = 0.0
     
     var mCurrentLat = 0.0
     var mCurrentLong = 0.0
+    
+    @IBOutlet weak var mMapView: GMSMapView!
+    @IBOutlet weak var mLastLocationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
