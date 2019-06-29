@@ -281,7 +281,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-yh-tsV">
                                 <rect key="frame" x="0.0" y="134" width="414" height="708"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.80392156859999997" blue="0.99215686270000003" alpha="0.71267658389999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">Park it: parking light
+                                <string key="text">Park it: parking light
 Our application will help you to find a parking lot very quickly by the following features: 
 
 Find parking space: no more spending time on finding parking space! 
@@ -299,7 +299,7 @@ Forgot when you parked your car?
 With "find my car screen" you can save your last parking location with the button "save" and search for your last parking location with the button "search" .
 The button reset will show you your current location.
                 
-Park it, parking fast and parking light.</mutableString>
+Park it, parking fast and parking light.</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
